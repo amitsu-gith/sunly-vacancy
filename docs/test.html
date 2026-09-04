@@ -1,0 +1,24 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>埋め込みプレビュー</title>
+<style>body{font-family:sans-serif;margin:16px;color:#222;max-width:720px}pre{background:#f6f6f6;padding:8px;overflow-x:auto;font-size:13px}</style></head><body>
+<p><a href="index.html">← 一覧に戻る</a></p>
+<h2 id="t">プレビュー</h2>
+<h3>一覧ページ用（summary）</h3>
+<div id="s"></div>
+<h3>店舗詳細ページ用（table）</h3>
+<div id="d"></div>
+<h3>あきばれのフリーHTML部品に貼るHTML</h3>
+<pre id="code"></pre>
+<script>
+var key = (location.search.match(/store=([^&]+)/) || [])[1] || 'onna';
+document.getElementById('t').textContent = 'プレビュー: ' + key;
+document.getElementById('s').innerHTML = '<div class="sunly-vacancy" data-store="' + key + '" data-mode="summary" data-fallback="最新の空室状況はお問い合わせください"></div>';
+document.getElementById('d').innerHTML = '<div class="sunly-vacancy" data-store="' + key + '" data-mode="table"></div>';
+var src = location.href.replace(/[?#].*$/, '').replace(/[^\/]*$/, '') + 'sunly-vacancy.js';
+document.getElementById('code').textContent =
+  '<div class="sunly-vacancy" data-store="' + key + '" data-mode="summary" data-fallback="最新の空室状況はお問い合わせください"></div>\n' +
+  '<div class="sunly-vacancy" data-store="' + key + '" data-mode="table"></div>\n' +
+  '<script src="' + src + '" defer><\/script>';
+var sc = document.createElement('script'); sc.src = 'sunly-vacancy.js'; sc.defer = true; document.body.appendChild(sc);
+</script>
+</body></html>
