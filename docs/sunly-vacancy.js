@@ -42,7 +42,6 @@
     return (Math.round(v * 100) % 10 === 0) ? v.toFixed(1) : v.toFixed(2);
   }
   function toCm(v) { return v == null ? '' : String(v); }
-  function updLine(data) { return '<div class="sv-upd">空室情報 更新：' + esc(data.source_time.slice(0, 10)) + '</div>'; }
 
   /* 空室があるときだけ出すキャンペーン文言。data-note 属性があれば優先、無ければ店舗マスタの campaign */
   function campaignLine(el, e) {
@@ -53,7 +52,7 @@
   }
 
   function renderSummary(el, e, data) {
-    el.innerHTML = '<div class="sv-summary">' + esc(e.summary) + campaignLine(el, e) + '</div>' + updLine(data);
+    el.innerHTML = '<div class="sv-summary">' + esc(e.summary) + campaignLine(el, e) + '</div>';
   }
 
   function renderTable(el, e, data) {
@@ -85,7 +84,7 @@
           '<td class="' + (r.vacant ? 'sv-ok' : 'sv-ng') + '">' + (r.vacant ? '〇' : '×') + '</td></tr>';
       });
     }
-    h += '</table></div>' + updLine(data);
+    h += '</table></div>';
     el.innerHTML = h;
   }
 
