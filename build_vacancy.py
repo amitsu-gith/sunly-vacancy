@@ -30,9 +30,14 @@ def is_bike(row):
     return row['トランクルームUNIT'] == 'バイク' or bool(BIKE_PAT.search(row['トランクルーム種別']))
 
 
+EXCLUDE_TYPE_PAT = re.compile(r'\bJR\b|ＪＲ')   # 種別に「JR」が付く部屋は無いものとして扱う（2026-09-04 指示）
+
+
 def match_unit(row, unit_filter):
     u = row['トランクルームUNIT']
     if u == '駐車場':
+        return False
+    if EXCLUDE_TYPE_PAT.search(nfkc(row['トランクルーム種別'])):
         return False
     if unit_filter == 'バイク':
         return is_bike(row)

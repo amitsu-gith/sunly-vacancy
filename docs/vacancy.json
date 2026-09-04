@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-04 13:57",
+ "generated_at": "2026-09-04 14:18",
  "source_time": "2026-09-04 09:19",
  "stores": {
   "sagamidai_tr": {
@@ -1194,7 +1194,7 @@
    "page": "/atsugi/simoogino/c",
    "list_page": "/okugai/atsugi",
    "campaign": "６か月以上利用で初月賃料無料",
-   "total": 18,
+   "total": 17,
    "vacant": 1,
    "rows": [
     {
@@ -1273,18 +1273,6 @@
     },
     {
      "type": "5.0帖",
-     "tatami": 5.0,
-     "w": 350,
-     "d": 220,
-     "h": 220,
-     "area": null,
-     "price": 16500,
-     "total": 1,
-     "vacant": 0,
-     "rooms": []
-    },
-    {
-     "type": "5.0帖 JR",
      "tatami": 5.0,
      "w": 350,
      "d": 220,
@@ -1549,21 +1537,9 @@
    "page": "/atsugi/tanasawa",
    "list_page": "/okugai/atsugi",
    "campaign": "６か月以上利用で初月賃料無料",
-   "total": 16,
+   "total": 15,
    "vacant": 0,
    "rows": [
-    {
-     "type": "5.0帖 JR",
-     "tatami": 5.0,
-     "w": 230,
-     "d": 350,
-     "h": 230,
-     "area": null,
-     "price": 16500,
-     "total": 1,
-     "vacant": 0,
-     "rooms": []
-    },
     {
      "type": "8.4帖",
      "tatami": 8.4,
@@ -4316,7 +4292,7 @@
    "page": "/ebina/simoimaizumi",
    "list_page": "/okugai/ebina",
    "campaign": "６か月以上利用で初月賃料無料",
-   "total": 12,
+   "total": 11,
    "vacant": 0,
    "rows": [
     {
@@ -4361,18 +4337,6 @@
      "w": 350,
      "d": 220,
      "h": 220,
-     "area": null,
-     "price": 23100,
-     "total": 1,
-     "vacant": 0,
-     "rooms": []
-    },
-    {
-     "type": "5.0帖 JR",
-     "tatami": 5.0,
-     "w": 230,
-     "d": 350,
-     "h": 230,
      "area": null,
      "price": 23100,
      "total": 1,
