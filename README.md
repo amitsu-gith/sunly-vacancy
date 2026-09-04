@@ -29,6 +29,12 @@
 - 一覧ページ：`data-mode="summary"`（赤字の一言）
 - 店舗詳細ページ：`data-mode="table"`（タイプ別または室番号別の ○× 表）
 
+### 埋め込み要素の属性
+- `data-note` … 空室があるときだけ赤字の下に出す文言。省略時は店舗マスタの `campaign` 列。`data-note=""` で非表示
+- `data-repeat` … table で N 行ごとに項目名の行を挟む。既定は室番号別の表が 10 行ごと、タイプ別は挟まない
+- `data-fallback` … データ取得に失敗したときに出す文言
+
 ## 店舗マスタの列
 `key`（埋め込みで使うID）/ `faboc_store`（ファボック店舗名そのまま）/ `unit_filter`（コンテナ・トランクルーム・バイク）/
-`hp_name` / `kind`（outdoor・indoor・bike）/ `mode`（type=タイプ別表・room=室番号別表）/ `page_path` / `list_page` / `publish` / `note`
+`hp_name` / `kind`（outdoor・indoor・bike）/ `mode`（type=タイプ別表・room=室番号別表）/ `page_path` / `list_page` / `publish` /
+`campaign`（空室があるときだけ表示する文言。全店「６か月以上利用で初月賃料無料」を初期値にした）/ `note`

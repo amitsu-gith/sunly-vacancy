@@ -96,6 +96,7 @@ def build_store(m, src):
     entry = {
         'name': m['hp_name'], 'kind': m['kind'], 'mode': m['mode'],
         'page': m['page_path'], 'list_page': m['list_page'],
+        'campaign': (m.get('campaign') or '').strip(),   # 空室があるときだけ表示する文言
         'total': len(src), 'vacant': 0, 'rows': [],
     }
     if m['mode'] == 'room':
