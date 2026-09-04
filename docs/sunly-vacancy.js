@@ -80,7 +80,7 @@
       h += head;
       e.rows.forEach(function (r, i) {
         if (rep && i && i % rep === 0) h += head;
-        h += '<tr><td>' + esc(r.room) + '</td><td>' + (r.tatami == null ? esc(r.type) : r.tatami) + '</td>' +
+        h += '<tr><td>' + esc(r.room) + (r.irregular ? '<br>変形' : '') + '</td><td>' + (r.tatami == null ? esc(r.type) : r.tatami) + '</td>' +
           '<td>' + f(r.w) + '</td><td>' + f(r.d) + '</td><td>' + f(r.h) + '</td><td>' + yen(r.price) + '</td>' +
           '<td class="' + (r.vacant ? 'sv-ok' : 'sv-ng') + '">' + (r.vacant ? '〇' : '×') + '</td></tr>';
       });

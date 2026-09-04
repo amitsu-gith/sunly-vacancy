@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-04 14:18",
+ "generated_at": "2026-09-04 14:24",
  "source_time": "2026-09-04 09:19",
  "stores": {
   "sagamidai_tr": {
@@ -14,6 +14,7 @@
    "rows": [
     {
      "room": "101",
+     "irregular": false,
      "type": "0.69帖(1.14平米)",
      "tatami": 0.69,
      "w": 103,
@@ -25,6 +26,7 @@
     },
     {
      "room": "102",
+     "irregular": false,
      "type": "0.60帖(0.99平米)",
      "tatami": 0.6,
      "w": 90,
@@ -36,6 +38,7 @@
     },
     {
      "room": "103",
+     "irregular": false,
      "type": "0.60帖(0.99平米)",
      "tatami": 0.6,
      "w": 90,
@@ -47,6 +50,7 @@
     },
     {
      "room": "104",
+     "irregular": false,
      "type": "0.54帖(0.9平米)",
      "tatami": 0.54,
      "w": 90,
@@ -58,6 +62,7 @@
     },
     {
      "room": "105",
+     "irregular": false,
      "type": "0.60帖(0.99平米)",
      "tatami": 0.6,
      "w": 90,
@@ -69,6 +74,7 @@
     },
     {
      "room": "106",
+     "irregular": false,
      "type": "0.60帖(0.99平米)",
      "tatami": 0.6,
      "w": 90,
@@ -80,6 +86,7 @@
     },
     {
      "room": "107",
+     "irregular": false,
      "type": "0.60帖(0.99平米)",
      "tatami": 0.6,
      "w": 90,
@@ -91,6 +98,7 @@
     },
     {
      "room": "108",
+     "irregular": false,
      "type": "0.47帖(0.79平米)",
      "tatami": 0.47,
      "w": 78,
@@ -102,6 +110,7 @@
     },
     {
      "room": "109",
+     "irregular": false,
      "type": "0.56帖(0.93平米)",
      "tatami": 0.56,
      "w": 90,
@@ -113,6 +122,7 @@
     },
     {
      "room": "110",
+     "irregular": false,
      "type": "0.67帖(1.12平米)",
      "tatami": 0.67,
      "w": 94,
@@ -124,6 +134,7 @@
     },
     {
      "room": "111",
+     "irregular": false,
      "type": "0.67帖(1.12平米)",
      "tatami": 0.67,
      "w": 94,
@@ -135,6 +146,7 @@
     },
     {
      "room": "112",
+     "irregular": false,
      "type": "1.50帖(2.48平米)",
      "tatami": 1.5,
      "w": 185,
@@ -146,6 +158,7 @@
     },
     {
      "room": "113",
+     "irregular": true,
      "type": "0.70帖(1.17平米)",
      "tatami": 0.7,
      "w": 135,
@@ -157,6 +170,7 @@
     },
     {
      "room": "114",
+     "irregular": false,
      "type": "2.01帖(3.33平米)",
      "tatami": 2.01,
      "w": 109,
@@ -168,6 +182,7 @@
     },
     {
      "room": "115",
+     "irregular": false,
      "type": "0.47帖(0.79平米)",
      "tatami": 0.47,
      "w": 98,
@@ -179,6 +194,7 @@
     },
     {
      "room": "116",
+     "irregular": false,
      "type": "0.49帖(0.81平米)",
      "tatami": 0.49,
      "w": 90,
@@ -190,6 +206,7 @@
     },
     {
      "room": "117",
+     "irregular": false,
      "type": "2.28帖(3.77平米)",
      "tatami": 2.28,
      "w": 218,
@@ -201,6 +218,7 @@
     },
     {
      "room": "118",
+     "irregular": true,
      "type": "2.07帖(3.43平米)",
      "tatami": 2.07,
      "w": 280,
@@ -212,6 +230,7 @@
     },
     {
      "room": "119",
+     "irregular": false,
      "type": "0.98帖(1.62平米)",
      "tatami": 0.98,
      "w": 90,
@@ -223,6 +242,7 @@
     },
     {
      "room": "120",
+     "irregular": false,
      "type": "0.98帖(1.62平米)",
      "tatami": 0.98,
      "w": 180,
@@ -966,6 +986,7 @@
    "rows": [
     {
      "room": "BKdT1",
+     "irregular": false,
      "type": "◎KCS1350",
      "tatami": null,
      "w": 128,
@@ -977,6 +998,7 @@
     },
     {
      "room": "BKdT2",
+     "irregular": false,
      "type": "◎KCS1350",
      "tatami": null,
      "w": 128,
@@ -1000,7 +1022,7 @@
    "vacant": 1,
    "rows": [
     {
-     "type": "1.1帖 中通路",
+     "type": "1.1帖",
      "tatami": 1.1,
      "w": 110,
      "d": 170,
@@ -1024,7 +1046,7 @@
      "rooms": []
     },
     {
-     "type": "2.2帖 中通路",
+     "type": "2.2帖",
      "tatami": 2.2,
      "w": 210,
      "d": 170,
@@ -1796,6 +1818,7 @@
    "rows": [
     {
      "room": "BKdT1",
+     "irregular": false,
      "type": "◎KCS1250",
      "tatami": null,
      "w": 118,
@@ -1807,6 +1830,7 @@
     },
     {
      "room": "BKdT2",
+     "irregular": false,
      "type": "◎KCS1250",
      "tatami": null,
      "w": 118,
@@ -2013,6 +2037,7 @@
    "rows": [
     {
      "room": "BKdT1",
+     "irregular": false,
      "type": "KCS175290",
      "tatami": null,
      "w": 166,
@@ -2527,7 +2552,7 @@
      ]
     },
     {
-     "type": "1.5帖 中通路",
+     "type": "1.5帖",
      "tatami": 1.5,
      "w": 110,
      "d": 210,
@@ -2724,6 +2749,7 @@
    "rows": [
     {
      "room": "BKdT1",
+     "irregular": false,
      "type": "◎KCS1250",
      "tatami": null,
      "w": 118,
@@ -2747,7 +2773,7 @@
    "vacant": 0,
    "rows": [
     {
-     "type": "1.5帖 中通路",
+     "type": "1.5帖",
      "tatami": 1.5,
      "w": 100,
      "d": 200,
@@ -2884,6 +2910,7 @@
    "rows": [
     {
      "room": "BKST5",
+     "irregular": false,
      "type": "バイク単W137",
      "tatami": 0.96,
      "w": 126,
@@ -2895,6 +2922,7 @@
     },
     {
      "room": "BKST6",
+     "irregular": false,
      "type": "バイク単W137",
      "tatami": 0.96,
      "w": 126,
@@ -2906,6 +2934,7 @@
     },
     {
      "room": "BKsT1",
+     "irregular": false,
      "type": "バイク",
      "tatami": 2.5,
      "w": 145,
@@ -2917,6 +2946,7 @@
     },
     {
      "room": "BKsT2",
+     "irregular": false,
      "type": "バイク割(145×290)",
      "tatami": 2.5,
      "w": 145,
@@ -2928,6 +2958,7 @@
     },
     {
      "room": "BKsT3",
+     "irregular": false,
      "type": "バイク割(145×290)",
      "tatami": 2.5,
      "w": 145,
@@ -2939,6 +2970,7 @@
     },
     {
      "room": "BKsT4",
+     "irregular": false,
      "type": "バイク割(145×290)",
      "tatami": 2.5,
      "w": 145,
@@ -2963,6 +2995,7 @@
    "rows": [
     {
      "room": "101",
+     "irregular": false,
      "type": "C(0.99~1.74帖) (1.84~2.88平米)",
      "tatami": 1.02,
      "w": 181,
@@ -2974,6 +3007,7 @@
     },
     {
      "room": "102",
+     "irregular": true,
      "type": "A(0.50~0.67帖) (0.828~1.11平米)",
      "tatami": 0.67,
      "w": 163,
@@ -2985,6 +3019,7 @@
     },
     {
      "room": "103",
+     "irregular": false,
      "type": "A(0.50~0.67帖) (0.828~1.11平米)",
      "tatami": 0.5,
      "w": 91,
@@ -2996,6 +3031,7 @@
     },
     {
      "room": "104",
+     "irregular": false,
      "type": "A(0.50~0.67帖) (0.828~1.11平米)",
      "tatami": 0.5,
      "w": 91,
@@ -3007,6 +3043,7 @@
     },
     {
      "room": "105",
+     "irregular": false,
      "type": "A(0.50~0.67帖) (0.828~1.11平米)",
      "tatami": 0.5,
      "w": 91,
@@ -3018,6 +3055,7 @@
     },
     {
      "room": "106",
+     "irregular": false,
      "type": "A(0.50~0.67帖) (0.828~1.11平米)",
      "tatami": 0.5,
      "w": 91,
@@ -3029,6 +3067,7 @@
     },
     {
      "room": "107",
+     "irregular": false,
      "type": "B(0.71~1.43帖) (1.18~1.14平米)",
      "tatami": 0.81,
      "w": 91,
@@ -3040,6 +3079,7 @@
     },
     {
      "room": "108",
+     "irregular": false,
      "type": "B(0.71~1.43帖) (1.18~1.14平米)",
      "tatami": 0.84,
      "w": 91,
@@ -3051,6 +3091,7 @@
     },
     {
      "room": "109",
+     "irregular": false,
      "type": "B(0.71~1.43帖) (1.18~1.14平米)",
      "tatami": 0.81,
      "w": 91,
@@ -3062,6 +3103,7 @@
     },
     {
      "room": "110",
+     "irregular": true,
      "type": "C(0.99~1.74帖) (1.84~2.88平米)",
      "tatami": 1.74,
      "w": 201,
@@ -3073,6 +3115,7 @@
     },
     {
      "room": "111",
+     "irregular": false,
      "type": "A(0.50~0.67帖) (0.828~1.11平米)",
      "tatami": 0.56,
      "w": 105,
@@ -3084,7 +3127,8 @@
     },
     {
      "room": "112",
-     "type": "D  (1.9~2.35帖)  (3.19~3.389平米)",
+     "irregular": false,
+     "type": "D (1.9~2.35帖) (3.19~3.389平米)",
      "tatami": 2.06,
      "w": 181,
      "d": 189,
@@ -3095,6 +3139,7 @@
     },
     {
      "room": "113",
+     "irregular": false,
      "type": "C(0.99~1.74帖) (1.84~2.88平米)",
      "tatami": 1.15,
      "w": 101,
@@ -3106,6 +3151,7 @@
     },
     {
      "room": "114",
+     "irregular": false,
      "type": "C(0.99~1.74帖) (1.84~2.88平米)",
      "tatami": 1.15,
      "w": 101,
@@ -3117,6 +3163,7 @@
     },
     {
      "room": "115",
+     "irregular": false,
      "type": "A(0.50~0.67帖) (0.828~1.11平米)",
      "tatami": 0.51,
      "w": 94,
@@ -3128,6 +3175,7 @@
     },
     {
      "room": "116",
+     "irregular": false,
      "type": "A(0.50~0.67帖) (0.828~1.11平米)",
      "tatami": 0.51,
      "w": 94,
@@ -3139,6 +3187,7 @@
     },
     {
      "room": "117",
+     "irregular": false,
      "type": "A(0.50~0.67帖) (0.828~1.11平米)",
      "tatami": 0.51,
      "w": 94,
@@ -3150,6 +3199,7 @@
     },
     {
      "room": "118",
+     "irregular": false,
      "type": "A(0.50~0.67帖) (0.828~1.11平米)",
      "tatami": 0.51,
      "w": 94,
@@ -3161,6 +3211,7 @@
     },
     {
      "room": "119",
+     "irregular": false,
      "type": "C(0.99~1.74帖) (1.84~2.88平米)",
      "tatami": 1.15,
      "w": 101,
@@ -3172,6 +3223,7 @@
     },
     {
      "room": "120",
+     "irregular": false,
      "type": "C(0.99~1.74帖) (1.84~2.88平米)",
      "tatami": 1.15,
      "w": 101,
@@ -3183,7 +3235,8 @@
     },
     {
      "room": "121",
-     "type": "D  (1.9~2.35帖)  (3.19~3.389平米)",
+     "irregular": true,
+     "type": "D (1.9~2.35帖) (3.19~3.389平米)",
      "tatami": 1.93,
      "w": 180,
      "d": 189,
@@ -3194,6 +3247,7 @@
     },
     {
      "room": "122",
+     "irregular": false,
      "type": "A(0.50~0.67帖) (0.828~1.11平米)",
      "tatami": 0.53,
      "w": 99,
@@ -3205,6 +3259,7 @@
     },
     {
      "room": "123",
+     "irregular": false,
      "type": "C(0.99~1.74帖) (1.84~2.88平米)",
      "tatami": 1.58,
      "w": 210,
@@ -3216,6 +3271,7 @@
     },
     {
      "room": "124",
+     "irregular": false,
      "type": "B(0.71~1.43帖) (1.18~1.14平米)",
      "tatami": 0.71,
      "w": 91,
@@ -3227,6 +3283,7 @@
     },
     {
      "room": "125",
+     "irregular": false,
      "type": "B(0.71~1.43帖) (1.18~1.14平米)",
      "tatami": 0.71,
      "w": 91,
@@ -3238,6 +3295,7 @@
     },
     {
      "room": "126",
+     "irregular": false,
      "type": "B(0.71~1.43帖) (1.18~1.14平米)",
      "tatami": 0.71,
      "w": 91,
@@ -3249,6 +3307,7 @@
     },
     {
      "room": "127",
+     "irregular": false,
      "type": "B(0.71~1.43帖) (1.18~1.14平米)",
      "tatami": 0.71,
      "w": 91,
@@ -3260,6 +3319,7 @@
     },
     {
      "room": "128",
+     "irregular": false,
      "type": "B(0.71~1.43帖) (1.18~1.14平米)",
      "tatami": 0.71,
      "w": 91,
@@ -3271,6 +3331,7 @@
     },
     {
      "room": "129",
+     "irregular": false,
      "type": "B(0.71~1.43帖) (1.18~1.14平米)",
      "tatami": 0.71,
      "w": 91,
@@ -3282,6 +3343,7 @@
     },
     {
      "room": "130",
+     "irregular": false,
      "type": "B(0.71~1.43帖) (1.18~1.14平米)",
      "tatami": 0.71,
      "w": 91,
@@ -3293,6 +3355,7 @@
     },
     {
      "room": "131",
+     "irregular": false,
      "type": "B(0.71~1.43帖) (1.18~1.14平米)",
      "tatami": 0.86,
      "w": 110,
@@ -3304,7 +3367,8 @@
     },
     {
      "room": "132",
-     "type": "D  (1.9~2.35帖)  (3.19~3.389平米)",
+     "irregular": true,
+     "type": "D (1.9~2.35帖) (3.19~3.389平米)",
      "tatami": 2.35,
      "w": 120,
      "d": 320,
@@ -3315,6 +3379,7 @@
     },
     {
      "room": "133",
+     "irregular": false,
      "type": "A(0.50~0.67帖) (0.828~1.11平米)",
      "tatami": 0.54,
      "w": 91,
@@ -3326,6 +3391,7 @@
     },
     {
      "room": "134",
+     "irregular": false,
      "type": "A(0.50~0.67帖) (0.828~1.11平米)",
      "tatami": 0.54,
      "w": 91,
@@ -3337,6 +3403,7 @@
     },
     {
      "room": "135",
+     "irregular": false,
      "type": "A(0.50~0.67帖) (0.828~1.11平米)",
      "tatami": 0.63,
      "w": 104,
@@ -3348,6 +3415,7 @@
     },
     {
      "room": "136",
+     "irregular": false,
      "type": "A(0.50~0.67帖) (0.828~1.11平米)",
      "tatami": 0.64,
      "w": 114,
@@ -3359,6 +3427,7 @@
     },
     {
      "room": "137",
+     "irregular": false,
      "type": "A(0.50~0.67帖) (0.828~1.11平米)",
      "tatami": 0.55,
      "w": 133,
@@ -3444,6 +3513,7 @@
    "rows": [
     {
      "room": "BKdT1",
+     "irregular": false,
      "type": "◎KCS1350",
      "tatami": null,
      "w": 128,
@@ -3455,6 +3525,7 @@
     },
     {
      "room": "BKdT2",
+     "irregular": false,
      "type": "◎KCS1350",
      "tatami": null,
      "w": 128,
@@ -3479,6 +3550,7 @@
    "rows": [
     {
      "room": "S01",
+     "irregular": false,
      "type": "3.2帖",
      "tatami": 3.2,
      "w": 191,
@@ -3490,6 +3562,7 @@
     },
     {
      "room": "S02",
+     "irregular": false,
      "type": "3.2帖",
      "tatami": 3.2,
      "w": 191,
@@ -3501,6 +3574,7 @@
     },
     {
      "room": "S03",
+     "irregular": false,
      "type": "3.2帖",
      "tatami": 3.2,
      "w": 191,
@@ -3512,6 +3586,7 @@
     },
     {
      "room": "S04",
+     "irregular": false,
      "type": "3.2帖",
      "tatami": 3.2,
      "w": 191,
@@ -3523,6 +3598,7 @@
     },
     {
      "room": "S05",
+     "irregular": false,
      "type": "3.2帖",
      "tatami": 3.2,
      "w": 191,
@@ -3534,6 +3610,7 @@
     },
     {
      "room": "S06",
+     "irregular": false,
      "type": "3.2帖",
      "tatami": 3.2,
      "w": 191,
@@ -3545,6 +3622,7 @@
     },
     {
      "room": "S07",
+     "irregular": false,
      "type": "3.2帖",
      "tatami": 3.2,
      "w": 191,
@@ -3556,6 +3634,7 @@
     },
     {
      "room": "S08",
+     "irregular": false,
      "type": "3.2帖",
      "tatami": 3.2,
      "w": 191,
@@ -3567,6 +3646,7 @@
     },
     {
      "room": "S09",
+     "irregular": false,
      "type": "3.2帖",
      "tatami": 3.2,
      "w": 191,
@@ -3578,6 +3658,7 @@
     },
     {
      "room": "S10",
+     "irregular": false,
      "type": "3.2帖",
      "tatami": 3.2,
      "w": 191,
@@ -3589,6 +3670,7 @@
     },
     {
      "room": "S11",
+     "irregular": false,
      "type": "3.2帖",
      "tatami": 3.2,
      "w": 191,
@@ -3600,6 +3682,7 @@
     },
     {
      "room": "S12",
+     "irregular": false,
      "type": "3.2帖",
      "tatami": 3.2,
      "w": 191,
@@ -3611,6 +3694,7 @@
     },
     {
      "room": "S13",
+     "irregular": false,
      "type": "3.2帖",
      "tatami": 3.2,
      "w": 191,
@@ -3622,6 +3706,7 @@
     },
     {
      "room": "S14",
+     "irregular": false,
      "type": "3.2帖",
      "tatami": 3.2,
      "w": 191,
@@ -3633,6 +3718,7 @@
     },
     {
      "room": "S15",
+     "irregular": false,
      "type": "3.2帖",
      "tatami": 3.2,
      "w": 191,
@@ -3644,6 +3730,7 @@
     },
     {
      "room": "S16",
+     "irregular": false,
      "type": "3.2帖",
      "tatami": 3.2,
      "w": 191,
@@ -3655,6 +3742,7 @@
     },
     {
      "room": "S17",
+     "irregular": false,
      "type": "2.2帖",
      "tatami": 2.2,
      "w": 191,
@@ -3666,6 +3754,7 @@
     },
     {
      "room": "S18",
+     "irregular": false,
      "type": "2.2帖",
      "tatami": 2.2,
      "w": 191,
@@ -3677,6 +3766,7 @@
     },
     {
      "room": "S19",
+     "irregular": false,
      "type": "2.2帖",
      "tatami": 2.2,
      "w": 191,
@@ -3688,6 +3778,7 @@
     },
     {
      "room": "S20",
+     "irregular": false,
      "type": "2.2帖",
      "tatami": 2.2,
      "w": 191,
@@ -3699,6 +3790,7 @@
     },
     {
      "room": "S21",
+     "irregular": false,
      "type": "3.2帖",
      "tatami": 3.2,
      "w": 191,
@@ -3723,6 +3815,7 @@
    "rows": [
     {
      "room": "BKST1",
+     "irregular": false,
      "type": "バイク単W137",
      "tatami": 3.2,
      "w": 126,
@@ -3734,6 +3827,7 @@
     },
     {
      "room": "BKST2",
+     "irregular": false,
      "type": "バイク単W137",
      "tatami": 3.2,
      "w": 126,
@@ -3745,6 +3839,7 @@
     },
     {
      "room": "BKST3",
+     "irregular": false,
      "type": "バイク単W137",
      "tatami": 3.2,
      "w": 126,
@@ -3818,6 +3913,7 @@
    "rows": [
     {
      "room": "01",
+     "irregular": false,
      "type": "1.51帖(2.49平米)",
      "tatami": 1.51,
      "w": 120,
@@ -3829,6 +3925,7 @@
     },
     {
      "room": "02",
+     "irregular": false,
      "type": "1.63帖(2.7平米)",
      "tatami": 1.63,
      "w": 120,
@@ -3840,6 +3937,7 @@
     },
     {
      "room": "03",
+     "irregular": false,
      "type": "1.71帖(2.83平米)",
      "tatami": 1.71,
      "w": 180,
@@ -3851,6 +3949,7 @@
     },
     {
      "room": "04",
+     "irregular": false,
      "type": "2.12帖(3.51平米)",
      "tatami": 2.12,
      "w": 240,
@@ -3862,6 +3961,7 @@
     },
     {
      "room": "05",
+     "irregular": false,
      "type": "1.52帖(2.52平米)",
      "tatami": 1.52,
      "w": 120,
@@ -3873,6 +3973,7 @@
     },
     {
      "room": "06",
+     "irregular": false,
      "type": "0.98帖(1.62平米)",
      "tatami": 0.98,
      "w": 90,
@@ -3884,6 +3985,7 @@
     },
     {
      "room": "07",
+     "irregular": false,
      "type": "1.9帖(3.15平米)",
      "tatami": 1.9,
      "w": 150,
@@ -3895,6 +3997,7 @@
     },
     {
      "room": "08",
+     "irregular": false,
      "type": "2.09帖(3.46平米)",
      "tatami": 2.09,
      "w": 165,
@@ -3906,6 +4009,7 @@
     },
     {
      "room": "09",
+     "irregular": false,
      "type": "0.49帖(0.81平米)",
      "tatami": 0.49,
      "w": 90,
@@ -3917,6 +4021,7 @@
     },
     {
      "room": "10",
+     "irregular": false,
      "type": "0.32帖(0.54平米)",
      "tatami": 0.32,
      "w": 90,
@@ -3928,6 +4033,7 @@
     },
     {
      "room": "11",
+     "irregular": false,
      "type": "0.32帖(0.54平米)",
      "tatami": 0.32,
      "w": 90,
@@ -3939,6 +4045,7 @@
     },
     {
      "room": "12",
+     "irregular": false,
      "type": "1.08帖(1.8平米)",
      "tatami": 1.08,
      "w": 120,
@@ -3950,6 +4057,7 @@
     },
     {
      "room": "13",
+     "irregular": false,
      "type": "0.98帖(1.62平米)",
      "tatami": 0.98,
      "w": 120,
@@ -3961,6 +4069,7 @@
     },
     {
      "room": "14",
+     "irregular": false,
      "type": "0.49帖(0.81平米)",
      "tatami": 0.49,
      "w": 90,
@@ -3972,6 +4081,7 @@
     },
     {
      "room": "15",
+     "irregular": false,
      "type": "1.14帖(1.89平米)",
      "tatami": 1.14,
      "w": 90,
@@ -3983,6 +4093,7 @@
     },
     {
      "room": "16",
+     "irregular": false,
      "type": "1.14帖(1.89平米)",
      "tatami": 1.14,
      "w": 90,
@@ -3994,6 +4105,7 @@
     },
     {
      "room": "17",
+     "irregular": false,
      "type": "1.14帖(1.89平米)",
      "tatami": 1.14,
      "w": 90,
@@ -4005,6 +4117,7 @@
     },
     {
      "room": "18",
+     "irregular": false,
      "type": "2.96帖(4.9平米)",
      "tatami": 2.96,
      "w": 240,
@@ -4016,6 +4129,7 @@
     },
     {
      "room": "19",
+     "irregular": false,
      "type": "0.81帖(1.35平米)",
      "tatami": 0.81,
      "w": 90,
@@ -4027,6 +4141,7 @@
     },
     {
      "room": "20",
+     "irregular": false,
      "type": "2.05帖(3.39平米)",
      "tatami": 2.05,
      "w": 240,
@@ -4038,6 +4153,7 @@
     },
     {
      "room": "21",
+     "irregular": false,
      "type": "0.81帖(1.35平米)",
      "tatami": 0.81,
      "w": 90,
@@ -4049,6 +4165,7 @@
     },
     {
      "room": "22",
+     "irregular": false,
      "type": "2.19帖(3.62平米)",
      "tatami": 2.19,
      "w": 170,
@@ -4073,6 +4190,7 @@
    "rows": [
     {
      "room": "BKST01",
+     "irregular": false,
      "type": "バイク",
      "tatami": 1.92,
      "w": 126,
@@ -4084,6 +4202,7 @@
     },
     {
      "room": "BKST02",
+     "irregular": false,
      "type": "バイク",
      "tatami": 1.92,
      "w": 126,
@@ -4095,6 +4214,7 @@
     },
     {
      "room": "BKST03",
+     "irregular": false,
      "type": "バイク",
      "tatami": 1.92,
      "w": 126,
@@ -4106,6 +4226,7 @@
     },
     {
      "room": "BKST04",
+     "irregular": false,
      "type": "バイク",
      "tatami": 1.92,
      "w": 126,
@@ -4117,6 +4238,7 @@
     },
     {
      "room": "BKST05",
+     "irregular": false,
      "type": "バイク",
      "tatami": 1.92,
      "w": 126,
@@ -4128,6 +4250,7 @@
     },
     {
      "room": "BKST06",
+     "irregular": false,
      "type": "バイク",
      "tatami": 1.92,
      "w": 126,
@@ -4139,6 +4262,7 @@
     },
     {
      "room": "BKST07",
+     "irregular": false,
      "type": "バイク",
      "tatami": 1.92,
      "w": 126,
@@ -4150,6 +4274,7 @@
     },
     {
      "room": "BKST08",
+     "irregular": false,
      "type": "バイク",
      "tatami": 1.92,
      "w": 126,
@@ -4174,6 +4299,7 @@
    "rows": [
     {
      "room": "BKST01",
+     "irregular": false,
      "type": "BOXシェローS",
      "tatami": 1.9,
      "w": 126,
@@ -4185,6 +4311,7 @@
     },
     {
      "room": "BKST02",
+     "irregular": false,
      "type": "BOXシェローS",
      "tatami": 1.9,
      "w": 126,
@@ -4196,6 +4323,7 @@
     },
     {
      "room": "BKST03",
+     "irregular": false,
      "type": "BOXシェローS",
      "tatami": 1.9,
      "w": 126,
@@ -4207,6 +4335,7 @@
     },
     {
      "room": "BKST04",
+     "irregular": false,
      "type": "BOXシェローS",
      "tatami": 1.9,
      "w": 126,
@@ -4218,6 +4347,7 @@
     },
     {
      "room": "BKST05",
+     "irregular": false,
      "type": "BOXシェローS",
      "tatami": 1.9,
      "w": 126,
@@ -4229,6 +4359,7 @@
     },
     {
      "room": "BKST06",
+     "irregular": false,
      "type": "BOXシェローS",
      "tatami": 1.9,
      "w": 126,
@@ -4240,6 +4371,7 @@
     },
     {
      "room": "BKST07",
+     "irregular": false,
      "type": "BOXシェローS",
      "tatami": 1.9,
      "w": 126,
@@ -4251,6 +4383,7 @@
     },
     {
      "room": "BKST08",
+     "irregular": false,
      "type": "BOXシェローS",
      "tatami": 1.9,
      "w": 126,
@@ -4262,6 +4395,7 @@
     },
     {
      "room": "BKST09",
+     "irregular": false,
      "type": "BOXシェローS",
      "tatami": 1.9,
      "w": 126,
@@ -4273,6 +4407,7 @@
     },
     {
      "room": "BKST10",
+     "irregular": false,
      "type": "BOXシェローS",
      "tatami": 1.9,
      "w": 126,
@@ -4370,6 +4505,7 @@
    "rows": [
     {
      "room": "BKdT1",
+     "irregular": false,
      "type": "◎KCS1250",
      "tatami": null,
      "w": 120,
@@ -4467,6 +4603,7 @@
    "rows": [
     {
      "room": "BKdT1",
+     "irregular": false,
      "type": "◎KCS1250",
      "tatami": null,
      "w": 120,
@@ -4478,6 +4615,7 @@
     },
     {
      "room": "BKdT2",
+     "irregular": false,
      "type": "◎KCS1250",
      "tatami": null,
      "w": 120,
@@ -4489,6 +4627,7 @@
     },
     {
      "room": "BKdT3",
+     "irregular": false,
      "type": "◎KCS1250",
      "tatami": null,
      "w": 120,
@@ -4500,6 +4639,7 @@
     },
     {
      "room": "BKdT4",
+     "irregular": false,
      "type": "◎KCS1250",
      "tatami": null,
      "w": 120,
@@ -4511,6 +4651,7 @@
     },
     {
      "room": "BKdT5",
+     "irregular": false,
      "type": "◎KCS1250",
      "tatami": null,
      "w": 120,
@@ -4522,6 +4663,7 @@
     },
     {
      "room": "BKdT6",
+     "irregular": false,
      "type": "◎KCS1250",
      "tatami": null,
      "w": 120,
@@ -4533,6 +4675,7 @@
     },
     {
      "room": "BKdT7",
+     "irregular": false,
      "type": "◎KCS1250",
      "tatami": null,
      "w": 120,
@@ -4544,6 +4687,7 @@
     },
     {
      "room": "BKdT8",
+     "irregular": false,
      "type": "◎KCS1250",
      "tatami": null,
      "w": 120,
@@ -4568,6 +4712,7 @@
    "rows": [
     {
      "room": "PL1",
+     "irregular": false,
      "type": "◎プレート",
      "tatami": 0.98,
      "w": 90,
@@ -4579,6 +4724,7 @@
     },
     {
      "room": "PL2",
+     "irregular": false,
      "type": "◎プレート",
      "tatami": 0.98,
      "w": 90,
@@ -4590,6 +4736,7 @@
     },
     {
      "room": "PL3",
+     "irregular": false,
      "type": "◎プレート",
      "tatami": 0.98,
      "w": 90,
@@ -4601,6 +4748,7 @@
     },
     {
      "room": "PL4",
+     "irregular": false,
      "type": "◎プレート",
      "tatami": 0.98,
      "w": 90,
@@ -4612,6 +4760,7 @@
     },
     {
      "room": "PL5",
+     "irregular": false,
      "type": "◎プレート",
      "tatami": 0.98,
      "w": 90,
@@ -4623,6 +4772,7 @@
     },
     {
      "room": "PL6",
+     "irregular": false,
      "type": "◎プレート",
      "tatami": 0.98,
      "w": 90,
@@ -4634,6 +4784,7 @@
     },
     {
      "room": "PL7",
+     "irregular": false,
      "type": "◎プレート",
      "tatami": 0.98,
      "w": 90,
@@ -4645,6 +4796,7 @@
     },
     {
      "room": "PL8",
+     "irregular": false,
      "type": "◎プレート",
      "tatami": 0.98,
      "w": 90,
@@ -4656,6 +4808,7 @@
     },
     {
      "room": "PL9",
+     "irregular": false,
      "type": "◎プレート",
      "tatami": 0.98,
      "w": 90,
@@ -4667,6 +4820,7 @@
     },
     {
      "room": "PT1",
+     "irregular": false,
      "type": "◎ポータブル",
      "tatami": 1.96,
      "w": 120,
@@ -4678,6 +4832,7 @@
     },
     {
      "room": "PT2",
+     "irregular": false,
      "type": "◎ポータブル",
      "tatami": 1.96,
      "w": 120,
@@ -4689,6 +4844,7 @@
     },
     {
      "room": "PT3",
+     "irregular": false,
      "type": "◎ポータブル",
      "tatami": 1.96,
      "w": 120,
@@ -4700,6 +4856,7 @@
     },
     {
      "room": "PT4",
+     "irregular": false,
      "type": "◎ポータブル",
      "tatami": 1.96,
      "w": 120,
@@ -4711,6 +4868,7 @@
     },
     {
      "room": "PT5",
+     "irregular": false,
      "type": "◎ポータブル",
      "tatami": 1.96,
      "w": 120,
@@ -4722,6 +4880,7 @@
     },
     {
      "room": "PT6",
+     "irregular": false,
      "type": "◎ポータブル",
      "tatami": 1.96,
      "w": 120,
@@ -4733,6 +4892,7 @@
     },
     {
      "room": "PT7",
+     "irregular": false,
      "type": "◎ポータブル",
      "tatami": 1.96,
      "w": 120,
@@ -4757,6 +4917,7 @@
    "rows": [
     {
      "room": "1",
+     "irregular": false,
      "type": "1.53帖",
      "tatami": 1.53,
      "w": 165,
@@ -4768,7 +4929,8 @@
     },
     {
      "room": "2",
-     "type": "1.61帖変形",
+     "irregular": true,
+     "type": "1.61帖",
      "tatami": 1.61,
      "w": 195,
      "d": 150,
@@ -4779,6 +4941,7 @@
     },
     {
      "room": "3",
+     "irregular": false,
      "type": "0.56帖",
      "tatami": 0.56,
      "w": 90,
@@ -4790,6 +4953,7 @@
     },
     {
      "room": "4",
+     "irregular": false,
      "type": "2.64帖",
      "tatami": 2.64,
      "w": 190,
@@ -4801,6 +4965,7 @@
     },
     {
      "room": "5",
+     "irregular": false,
      "type": "1.25帖",
      "tatami": 1.25,
      "w": 90,
@@ -4812,6 +4977,7 @@
     },
     {
      "room": "6",
+     "irregular": false,
      "type": "0.64帖",
      "tatami": 0.64,
      "w": 115,
@@ -4823,6 +4989,7 @@
     },
     {
      "room": "7",
+     "irregular": false,
      "type": "0.61帖",
      "tatami": 0.61,
      "w": 110,
@@ -4834,6 +5001,7 @@
     },
     {
      "room": "8",
+     "irregular": false,
      "type": "0.78帖",
      "tatami": 0.78,
      "w": 140,
@@ -4845,6 +5013,7 @@
     },
     {
      "room": "9",
+     "irregular": true,
      "type": "0.98帖",
      "tatami": 0.98,
      "w": 140,
@@ -4856,7 +5025,8 @@
     },
     {
      "room": "10",
-     "type": "1.2帖変形",
+     "irregular": true,
+     "type": "1.2帖",
      "tatami": 1.2,
      "w": 115,
      "d": 150,
@@ -4867,6 +5037,7 @@
     },
     {
      "room": "11",
+     "irregular": false,
      "type": "0.5帖",
      "tatami": 0.5,
      "w": 90,
@@ -4878,6 +5049,7 @@
     },
     {
      "room": "12",
+     "irregular": false,
      "type": "0.67帖",
      "tatami": 0.67,
      "w": 120,
@@ -4889,6 +5061,7 @@
     },
     {
      "room": "13",
+     "irregular": false,
      "type": "0.5帖",
      "tatami": 0.5,
      "w": 90,
@@ -4900,6 +5073,7 @@
     },
     {
      "room": "14",
+     "irregular": false,
      "type": "1.3帖",
      "tatami": 1.3,
      "w": 140,
@@ -4911,6 +5085,7 @@
     },
     {
      "room": "15",
+     "irregular": false,
      "type": "0.78帖",
      "tatami": 0.78,
      "w": null,
@@ -4922,6 +5097,7 @@
     },
     {
      "room": "16",
+     "irregular": false,
      "type": "0.65帖",
      "tatami": 0.65,
      "w": null,
@@ -4933,6 +5109,7 @@
     },
     {
      "room": "17",
+     "irregular": false,
      "type": "0.47帖",
      "tatami": 0.47,
      "w": 90,
@@ -4944,6 +5121,7 @@
     },
     {
      "room": "18",
+     "irregular": true,
      "type": "1.35帖",
      "tatami": 1.35,
      "w": 175,
@@ -4955,6 +5133,7 @@
     },
     {
      "room": "19",
+     "irregular": false,
      "type": "1.06帖",
      "tatami": 1.06,
      "w": 90,
@@ -4966,6 +5145,7 @@
     },
     {
      "room": "20",
+     "irregular": false,
      "type": "1.06帖",
      "tatami": 1.06,
      "w": 90,
@@ -4977,6 +5157,7 @@
     },
     {
      "room": "21",
+     "irregular": false,
      "type": "1.06帖",
      "tatami": 1.06,
      "w": 90,
@@ -4988,6 +5169,7 @@
     },
     {
      "room": "22",
+     "irregular": false,
      "type": "0.83帖",
      "tatami": 0.83,
      "w": 90,
@@ -4999,6 +5181,7 @@
     },
     {
      "room": "23",
+     "irregular": false,
      "type": "1.58帖",
      "tatami": 1.58,
      "w": 135,
@@ -5010,6 +5193,7 @@
     },
     {
      "room": "24",
+     "irregular": true,
      "type": "1.28帖",
      "tatami": 1.28,
      "w": 110,
@@ -5021,6 +5205,7 @@
     },
     {
      "room": "25",
+     "irregular": false,
      "type": "1.43帖",
      "tatami": 1.43,
      "w": 110,
@@ -5032,6 +5217,7 @@
     },
     {
      "room": "26",
+     "irregular": false,
      "type": "1.43帖",
      "tatami": 1.43,
      "w": 110,
@@ -5043,6 +5229,7 @@
     },
     {
      "room": "27",
+     "irregular": true,
      "type": "1.49帖",
      "tatami": 1.49,
      "w": 110,
@@ -5067,6 +5254,7 @@
    "rows": [
     {
      "room": "1",
+     "irregular": false,
      "type": "◎ポータブル",
      "tatami": 1.96,
      "w": 120,
@@ -5078,6 +5266,7 @@
     },
     {
      "room": "2",
+     "irregular": false,
      "type": "◎ポータブル",
      "tatami": 1.96,
      "w": 120,
@@ -5089,6 +5278,7 @@
     },
     {
      "room": "3",
+     "irregular": false,
      "type": "◎ポータブル",
      "tatami": 1.96,
      "w": 120,
@@ -5100,6 +5290,7 @@
     },
     {
      "room": "4",
+     "irregular": false,
      "type": "◎ポータブル",
      "tatami": 1.96,
      "w": 120,
@@ -5111,6 +5302,7 @@
     },
     {
      "room": "5",
+     "irregular": false,
      "type": "◎ポータブル",
      "tatami": 1.96,
      "w": 120,
@@ -5122,6 +5314,7 @@
     },
     {
      "room": "6",
+     "irregular": false,
      "type": "◎ポータブル",
      "tatami": 1.96,
      "w": 120,
@@ -5133,6 +5326,7 @@
     },
     {
      "room": "7",
+     "irregular": false,
      "type": "◎ポータブル",
      "tatami": 1.96,
      "w": 120,
@@ -5144,6 +5338,7 @@
     },
     {
      "room": "8",
+     "irregular": false,
      "type": "◎ポータブル",
      "tatami": 1.96,
      "w": 120,
@@ -5155,6 +5350,7 @@
     },
     {
      "room": "9",
+     "irregular": false,
      "type": "◎ポータブル",
      "tatami": 1.96,
      "w": 120,
@@ -5166,6 +5362,7 @@
     },
     {
      "room": "10",
+     "irregular": false,
      "type": "◎ポータブル",
      "tatami": 1.96,
      "w": 120,
@@ -5177,6 +5374,7 @@
     },
     {
      "room": "11",
+     "irregular": false,
      "type": "◎ポータブル",
      "tatami": 1.96,
      "w": 120,
@@ -5188,6 +5386,7 @@
     },
     {
      "room": "12",
+     "irregular": false,
      "type": "◎ポータブル",
      "tatami": 1.96,
      "w": 120,
@@ -5199,6 +5398,7 @@
     },
     {
      "room": "13",
+     "irregular": false,
      "type": "◎ポータブル",
      "tatami": 1.96,
      "w": 120,
@@ -5210,6 +5410,7 @@
     },
     {
      "room": "14",
+     "irregular": false,
      "type": "◎ポータブル",
      "tatami": 1.96,
      "w": 120,
@@ -5221,6 +5422,7 @@
     },
     {
      "room": "15",
+     "irregular": false,
      "type": "◎ポータブル",
      "tatami": 1.96,
      "w": 120,
@@ -5232,6 +5434,7 @@
     },
     {
      "room": "16",
+     "irregular": false,
      "type": "◎ポータブル",
      "tatami": 1.96,
      "w": 120,
@@ -5243,6 +5446,7 @@
     },
     {
      "room": "17",
+     "irregular": false,
      "type": "◎ポータブル",
      "tatami": 1.96,
      "w": 120,
@@ -5254,6 +5458,7 @@
     },
     {
      "room": "18",
+     "irregular": false,
      "type": "◎オープン",
      "tatami": 2.28,
      "w": 130,
@@ -5265,6 +5470,7 @@
     },
     {
      "room": "19",
+     "irregular": false,
      "type": "◎オープン",
      "tatami": 2.28,
      "w": 130,
@@ -5276,6 +5482,7 @@
     },
     {
      "room": "20",
+     "irregular": false,
      "type": "◎オープン",
      "tatami": 2.28,
      "w": 130,
@@ -5287,6 +5494,7 @@
     },
     {
      "room": "21",
+     "irregular": false,
      "type": "◎オープン",
      "tatami": 2.28,
      "w": 130,
@@ -5298,6 +5506,7 @@
     },
     {
      "room": "22",
+     "irregular": false,
      "type": "◎オープン",
      "tatami": 2.28,
      "w": 140,
@@ -5309,6 +5518,7 @@
     },
     {
      "room": "23",
+     "irregular": false,
      "type": "◎オープン",
      "tatami": 2.28,
      "w": 140,
@@ -5333,6 +5543,7 @@
    "rows": [
     {
      "room": "1",
+     "irregular": true,
      "type": "2.2帖(3.5平米)",
      "tatami": 2.2,
      "w": 140,
@@ -5344,6 +5555,7 @@
     },
     {
      "room": "2",
+     "irregular": false,
      "type": "3.0帖(4.9平米)",
      "tatami": 3.0,
      "w": 155,
@@ -5355,6 +5567,7 @@
     },
     {
      "room": "3",
+     "irregular": false,
      "type": "1.1帖(1.8平米)",
      "tatami": 1.1,
      "w": 130,
@@ -5366,6 +5579,7 @@
     },
     {
      "room": "4",
+     "irregular": false,
      "type": "1.4帖(2.3平米)",
      "tatami": 1.4,
      "w": 180,
@@ -5377,6 +5591,7 @@
     },
     {
      "room": "5",
+     "irregular": true,
      "type": "1.4帖(2.2平米)",
      "tatami": 1.4,
      "w": 265,
@@ -5388,6 +5603,7 @@
     },
     {
      "room": "6",
+     "irregular": false,
      "type": "1.3帖(2.1平米)",
      "tatami": 1.3,
      "w": 120,
@@ -5399,6 +5615,7 @@
     },
     {
      "room": "7",
+     "irregular": false,
      "type": "1.1帖(1.8平米)",
      "tatami": 1.1,
      "w": 175,
@@ -5410,6 +5627,7 @@
     },
     {
      "room": "8",
+     "irregular": false,
      "type": "1.0帖(1.6平米)",
      "tatami": 1.0,
      "w": 155,
@@ -5421,6 +5639,7 @@
     },
     {
      "room": "9",
+     "irregular": false,
      "type": "2.0帖(3.2平米)",
      "tatami": 2.0,
      "w": 205,
@@ -5432,6 +5651,7 @@
     },
     {
      "room": "10",
+     "irregular": true,
      "type": "1.1帖(1.8平米)",
      "tatami": 1.1,
      "w": 180,
@@ -5443,6 +5663,7 @@
     },
     {
      "room": "11",
+     "irregular": false,
      "type": "0.8帖(1.3平米)",
      "tatami": 0.8,
      "w": 140,
@@ -5454,6 +5675,7 @@
     },
     {
      "room": "12",
+     "irregular": false,
      "type": "1.0帖(1.6平米)",
      "tatami": 1.0,
      "w": 180,
@@ -5465,6 +5687,7 @@
     },
     {
      "room": "13",
+     "irregular": true,
      "type": "1.1帖(1.8平米)",
      "tatami": 1.1,
      "w": 110,
@@ -5476,6 +5699,7 @@
     },
     {
      "room": "14",
+     "irregular": false,
      "type": "1.0帖(1.6平米)",
      "tatami": 1.0,
      "w": 90,
@@ -5487,6 +5711,7 @@
     },
     {
      "room": "15",
+     "irregular": false,
      "type": "1.0帖(1.6平米)",
      "tatami": 1.0,
      "w": 90,
@@ -5498,6 +5723,7 @@
     },
     {
      "room": "16",
+     "irregular": false,
      "type": "1.0帖(1.6平米)",
      "tatami": 1.0,
      "w": 90,
@@ -5509,6 +5735,7 @@
     },
     {
      "room": "17",
+     "irregular": true,
      "type": "0.9帖(1.4平米)",
      "tatami": 0.9,
      "w": 130,
@@ -5520,6 +5747,7 @@
     },
     {
      "room": "18",
+     "irregular": true,
      "type": "1.1帖(1.8平米)",
      "tatami": 1.1,
      "w": 120,
@@ -5531,6 +5759,7 @@
     },
     {
      "room": "19",
+     "irregular": false,
      "type": "1.2帖(2.0平米)",
      "tatami": 1.2,
      "w": 110,
@@ -5542,6 +5771,7 @@
     },
     {
      "room": "20",
+     "irregular": true,
      "type": "1.5帖(2.4平米)",
      "tatami": 1.5,
      "w": 165,
@@ -5566,6 +5796,7 @@
    "rows": [
     {
      "room": "BKST1",
+     "irregular": false,
      "type": "BOXシェローS",
      "tatami": 1.37,
      "w": 126,
@@ -5577,6 +5808,7 @@
     },
     {
      "room": "BKST2",
+     "irregular": false,
      "type": "BOXシェローS",
      "tatami": 1.37,
      "w": 126,
@@ -5588,6 +5820,7 @@
     },
     {
      "room": "BKST3",
+     "irregular": false,
      "type": "BOXシェローS",
      "tatami": 1.37,
      "w": 126,
@@ -5612,6 +5845,7 @@
    "rows": [
     {
      "room": "1",
+     "irregular": false,
      "type": "3.2帖",
      "tatami": 3.2,
      "w": 191,
@@ -5623,6 +5857,7 @@
     },
     {
      "room": "2",
+     "irregular": false,
      "type": "3.2帖",
      "tatami": 3.2,
      "w": 191,
@@ -5634,6 +5869,7 @@
     },
     {
      "room": "3",
+     "irregular": false,
      "type": "3.2帖",
      "tatami": 3.2,
      "w": 191,
@@ -5645,6 +5881,7 @@
     },
     {
      "room": "4",
+     "irregular": false,
      "type": "3.2帖",
      "tatami": 3.2,
      "w": 191,
@@ -5656,6 +5893,7 @@
     },
     {
      "room": "5",
+     "irregular": false,
      "type": "3.2帖",
      "tatami": 3.2,
      "w": 191,
@@ -5667,6 +5905,7 @@
     },
     {
      "room": "6",
+     "irregular": false,
      "type": "3.2帖",
      "tatami": 3.2,
      "w": 191,
@@ -5678,6 +5917,7 @@
     },
     {
      "room": "7",
+     "irregular": false,
      "type": "3.2帖",
      "tatami": 3.2,
      "w": 191,
@@ -5689,6 +5929,7 @@
     },
     {
      "room": "8",
+     "irregular": false,
      "type": "2.2帖",
      "tatami": 2.12,
      "w": 191,
@@ -5700,6 +5941,7 @@
     },
     {
      "room": "9",
+     "irregular": false,
      "type": "2.2帖",
      "tatami": 2.12,
      "w": 191,
@@ -5711,6 +5953,7 @@
     },
     {
      "room": "10",
+     "irregular": false,
      "type": "2.2帖",
      "tatami": 2.12,
      "w": 191,
@@ -5722,6 +5965,7 @@
     },
     {
      "room": "11",
+     "irregular": false,
      "type": "2.2帖",
      "tatami": 2.12,
      "w": 191,
@@ -5733,6 +5977,7 @@
     },
     {
      "room": "12",
+     "irregular": false,
      "type": "2.2帖",
      "tatami": 2.12,
      "w": 191,
@@ -5744,6 +5989,7 @@
     },
     {
      "room": "13",
+     "irregular": false,
      "type": "2.2帖",
      "tatami": 2.12,
      "w": 191,
@@ -5755,6 +6001,7 @@
     },
     {
      "room": "14",
+     "irregular": false,
      "type": "2.2帖",
      "tatami": 2.12,
      "w": 191,
@@ -5834,6 +6081,7 @@
    "rows": [
     {
      "room": "BKdT1",
+     "irregular": false,
      "type": "◎KCS1350",
      "tatami": null,
      "w": 129,

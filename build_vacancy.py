@@ -73,6 +73,21 @@ def tatami_of(kind_label):
     return float(m.group(1)) if m else None
 
 
+IGNORE_IN_TYPE = ('中通路', '変形')   # 種別ラベルから除く語（2026-09-04 指示。中通路は同じタイプに統合、変形は別フラグで扱う）
+
+
+def type_label(s):
+    s = nfkc(s)
+    for w in IGNORE_IN_TYPE:
+        s = s.replace(w, '')
+    return re.sub(r'\s+', ' ', s).strip()
+
+
+def is_irregular(row):
+    """変形部屋か。室番号・種別・備考・メモのいずれかに「変形」があれば True（文言そのものは出力しない）"""
+    return any('変形' in nfkc(row.get(c, '')) for c in ('トランクルームNo', 'トランクルーム種別', '備考', 'メモ'))
+
+
 def num(s):
     s = nfkc(s).replace(',', '')
     if not s:
@@ -111,7 +126,8 @@ def build_store(m, src):
             v = r['ステータス'] == '貸出待ち'
             items.append({
                 'room': no,
-                'type': nfkc(r['トランクルーム種別']),
+                'irregular': is_irregular(r),
+                'type': type_label(r['トランクルーム種別']),
                 'tatami': num(r['面積（畳）']) or tatami_of(r['トランクルーム種別']),
                 'w': num(r['幅cm']), 'd': num(r['奥行cm']), 'h': num(r['高さcm']),
                 'area': num(r['面積（平米）']),
@@ -123,14 +139,14 @@ def build_store(m, src):
     else:
         groups = collections.OrderedDict()
         for r in src:
-            key = (nfkc(r['トランクルーム種別']), num(r['金額（税込）']))
+            key = (type_label(r['トランクルーム種別']), num(r['金額（税込）']))
             g = groups.setdefault(key, {'type': key[0], 'tatami': tatami_of(key[0]), 'price': key[1],
                                         'total': 0, 'vacant': 0, 'rooms': [], 'dims': collections.Counter()})
             g['total'] += 1
             g['dims'][(num(r['幅cm']), num(r['奥行cm']), num(r['高さcm']), num(r['面積（平米）']))] += 1
             if r['ステータス'] == '貸出待ち':
                 g['vacant'] += 1
-                g['rooms'].append(room_no(r['トランクルームNo'], r['店舗']))
+                g['rooms'].append(room_no(r['トランクルームNo'], r['店舗']) + ('(変形)' if is_irregular(r) else ''))
         for g in sorted(groups.values(), key=lambda g: (g['tatami'] or 999, g['price'] or 0, g['type'])):
             w, d, h, a = g['dims'].most_common(1)[0][0]
             entry['rows'].append({'type': g['type'], 'tatami': g['tatami'], 'w': w, 'd': d, 'h': h, 'area': a,
