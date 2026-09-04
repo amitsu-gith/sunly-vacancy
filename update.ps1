@@ -1,4 +1,4 @@
-# 毎朝の更新スクリプト（Windows タスクスケジューラから実行）
+﻿# 毎朝の更新スクリプト（Windows タスクスケジューラから実行）
 #   powershell -ExecutionPolicy Bypass -File update.ps1
 # 手順: CSV置き場から取り込み → vacancy.json 生成 → GitHub Pages へ push
 $ErrorActionPreference = 'Stop'
