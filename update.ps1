@@ -1,6 +1,7 @@
 ﻿# 毎朝の更新スクリプト（デスクトップのショートカット「サンリーHP空室更新」から手動で実行）
 #   powershell -ExecutionPolicy Bypass -File update.ps1
-# 手順: CSV置き場から取り込み → vacancy.json 生成 → GitHub Pages へ push
+# 手順: GitHub から最新を取得 → CSV置き場から取り込み → vacancy.json 生成 → GitHub Pages へ push
+# 新PC・旧PCの両方で使う（PCごとに C:\dev\sunly-vacancy へ clone。GitHub が正）
 $ErrorActionPreference = 'Stop'
 $Repo   = Split-Path -Parent $MyInvocation.MyCommand.Path
 $CsvDir = 'G:\共有ドライブ\VAIO\Claude Code\projects\サンリー\input\faboc'   # ファボックCSVの置き場（手動ダウンロード先）
@@ -14,6 +15,9 @@ foreach ($f in 'trunkroom.csv', 'operatingstatus.csv') {
 }
 
 Set-Location $Repo
+git pull --ff-only
+if ($LASTEXITCODE -ne 0) { throw 'git pull が失敗しました（もう一方のPCでの変更と衝突している可能性）' }
+
 python build_vacancy.py --csv-dir $InDir --out docs
 if ($LASTEXITCODE -ne 0) { throw 'build_vacancy.py が失敗しました' }
 
