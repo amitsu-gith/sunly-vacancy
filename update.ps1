@@ -1,9 +1,9 @@
-﻿# 毎朝の更新スクリプト（Windows タスクスケジューラから実行）
+﻿# 毎朝の更新スクリプト（デスクトップのショートカット「サンリーHP空室更新」から手動で実行）
 #   powershell -ExecutionPolicy Bypass -File update.ps1
 # 手順: CSV置き場から取り込み → vacancy.json 生成 → GitHub Pages へ push
 $ErrorActionPreference = 'Stop'
 $Repo   = Split-Path -Parent $MyInvocation.MyCommand.Path
-$CsvDir = 'G:\共有ドライブ\VAIO\Claude Code\work\clients\サンリー\base\faboc'   # ファボックCSVの置き場（手動ダウンロード先）
+$CsvDir = 'G:\共有ドライブ\VAIO\Claude Code\projects\サンリー\input\faboc'   # ファボックCSVの置き場（手動ダウンロード先）
 $InDir  = Join-Path $Repo 'input'
 
 New-Item -ItemType Directory -Force $InDir | Out-Null
