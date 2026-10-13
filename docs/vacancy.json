@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-13 20:10",
+ "generated_at": "2026-10-13 20:29",
  "source_time": "2026-10-13 17:02",
  "stores": {
   "sagamidai_tr": {
@@ -52,7 +52,7 @@
     },
     {
      "room": "104",
-     "irregular": false,
+     "irregular": true,
      "type": "0.54帖(0.9平米)",
      "tatami": 0.54,
      "w": 90,
@@ -1592,9 +1592,21 @@
    "campaign": "６か月以上利用で初月賃料無料",
    "show_area": false,
    "detail_px": null,
-   "total": 18,
+   "total": 19,
    "vacant": 2,
    "rows": [
+    {
+     "type": "5.0帖",
+     "tatami": 5.0,
+     "w": 230,
+     "d": 350,
+     "h": 230,
+     "price": 16500,
+     "total": 1,
+     "vacant": 0,
+     "rooms": [],
+     "area": 8.05
+    },
     {
      "type": "8.4帖",
      "tatami": 8.4,
@@ -1622,7 +1634,7 @@
    "campaign": "６か月以上利用で初月賃料無料",
    "show_area": false,
    "detail_px": 20,
-   "total": 55,
+   "total": 57,
    "vacant": 0,
    "rows": [
     {
@@ -1648,6 +1660,18 @@
      "vacant": 0,
      "rooms": [],
      "area": 1.98
+    },
+    {
+     "type": "1.2帖",
+     "tatami": 1.2,
+     "w": 140,
+     "d": 130,
+     "h": 230,
+     "price": 5500,
+     "total": 2,
+     "vacant": 0,
+     "rooms": [],
+     "area": 1.82
     },
     {
      "type": "1.5帖",
@@ -2134,7 +2158,7 @@
    "campaign": "６か月以上利用で初月賃料無料",
    "show_area": true,
    "detail_px": null,
-   "total": 8,
+   "total": 12,
    "vacant": 0,
    "rows": [
     {
@@ -2148,6 +2172,30 @@
      "vacant": 0,
      "rooms": [],
      "area": 4.37
+    },
+    {
+     "type": "3.2帖",
+     "tatami": 3.2,
+     "w": 200,
+     "d": 260,
+     "h": 200,
+     "price": 12100,
+     "total": 2,
+     "vacant": 0,
+     "rooms": [],
+     "area": 5.2
+    },
+    {
+     "type": "4.0帖",
+     "tatami": 4.0,
+     "w": 280,
+     "d": 220,
+     "h": 220,
+     "price": 14300,
+     "total": 2,
+     "vacant": 0,
+     "rooms": [],
+     "area": 6.16
     },
     {
      "type": "4.1帖",
@@ -2857,6 +2905,30 @@
      "vacant": 0,
      "rooms": [],
      "area": 13.57
+    },
+    {
+     "type": "バイクガレージ",
+     "tatami": null,
+     "w": 126,
+     "d": 252,
+     "h": 179,
+     "price": 13200,
+     "total": 2,
+     "vacant": 0,
+     "rooms": [],
+     "area": 3.18
+    },
+    {
+     "type": "バイクガレージ",
+     "tatami": null,
+     "w": 145,
+     "d": 290,
+     "h": 235,
+     "price": 13200,
+     "total": 4,
+     "vacant": 0,
+     "rooms": [],
+     "area": 4.2
     }
    ],
    "summary": "満室御礼"
@@ -3906,7 +3978,7 @@
    "rows": [
     {
      "room": "01",
-     "irregular": false,
+     "irregular": true,
      "type": "1.51帖(2.49平米)",
      "tatami": 1.51,
      "w": 120,
@@ -3930,7 +4002,7 @@
     },
     {
      "room": "03",
-     "irregular": false,
+     "irregular": true,
      "type": "1.71帖(2.83平米)",
      "tatami": 1.71,
      "w": 180,
@@ -3942,7 +4014,7 @@
     },
     {
      "room": "04",
-     "irregular": false,
+     "irregular": true,
      "type": "2.12帖(3.51平米)",
      "tatami": 2.12,
      "w": 240,
@@ -4050,7 +4122,7 @@
     },
     {
      "room": "13",
-     "irregular": false,
+     "irregular": true,
      "type": "0.98帖(1.62平米)",
      "tatami": 0.98,
      "w": 120,
@@ -4110,7 +4182,7 @@
     },
     {
      "room": "18",
-     "irregular": false,
+     "irregular": true,
      "type": "2.96帖(4.9平米)",
      "tatami": 2.96,
      "w": 240,
@@ -4134,7 +4206,7 @@
     },
     {
      "room": "20",
-     "irregular": false,
+     "irregular": true,
      "type": "2.05帖(3.39平米)",
      "tatami": 2.05,
      "w": 240,
@@ -4158,7 +4230,7 @@
     },
     {
      "room": "22",
-     "irregular": false,
+     "irregular": true,
      "type": "2.19帖(3.62平米)",
      "tatami": 2.19,
      "w": 170,
@@ -6096,6 +6168,18 @@
      "vacant": 0,
      "rooms": [],
      "area": 12.76
+    },
+    {
+     "type": "バイクガレージ",
+     "tatami": null,
+     "w": 129,
+     "d": 270,
+     "h": 180,
+     "price": 11000,
+     "total": 1,
+     "vacant": 0,
+     "rooms": [],
+     "area": 3.48
     }
    ],
    "summary": "2.6帖・4.0帖 空き室有り"

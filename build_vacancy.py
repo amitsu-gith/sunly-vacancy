@@ -109,6 +109,11 @@ def is_irregular(row):
     return any('変形' in nfkc(row.get(c, '')) for c in ('トランクルームNo', 'トランクルーム種別', '備考', 'メモ'))
 
 
+def is_vacant(r):
+    """空室か。店舗マスタの keep_rooms で残した部屋（無効・JR）は常に満室（×）"""
+    return r['ステータス'] == '貸出待ち' and not r.get('_keep')
+
+
 def num(s):
     s = nfkc(s).replace(',', '')
     if not s:
@@ -142,14 +147,15 @@ def build_store(m, src):
         'detail_px': num(m.get('detail_px') or ''),          # 店舗ページの一言の文字サイズ（元のページに合わせる）
         'total': len(src), 'vacant': 0, 'rows': [],
     }
+    irregular = set((m.get('irregular_rooms') or '').split())   # 店舗マスタで変形とする室（ファボックに記入が無いもの）
     if m['mode'] == 'room':
         items = []
         for r in src:
             no = room_no(r['トランクルームNo'], r['店舗'])
-            v = r['ステータス'] == '貸出待ち'
+            v = is_vacant(r)
             items.append({
                 'room': no,
-                'irregular': is_irregular(r),
+                'irregular': is_irregular(r) or no in irregular,
                 'type': type_label(r['トランクルーム種別']),
                 'tatami': num(r['面積（畳）']) or tatami_of(r['トランクルーム種別']),
                 'w': num(r['幅cm']), 'd': num(r['奥行cm']), 'h': num(r['高さcm']),
@@ -177,9 +183,10 @@ def build_store(m, src):
                 row['price'] = p
             row['areas'][num(r['面積（平米）'])] += 1
             row['total'] += 1
-            if r['ステータス'] == '貸出待ち':
+            if is_vacant(r):
+                no = room_no(r['トランクルームNo'], r['店舗'])
                 row['vacant'] += 1
-                row['rooms'].append(room_no(r['トランクルームNo'], r['店舗']) + ('(変形)' if is_irregular(r) else ''))
+                row['rooms'].append(no + ('(変形)' if is_irregular(r) or no in irregular else ''))
         # 同じタイプで幅・奥・高の差がどれも DIM_TOLERANCE cm 以内の行は入力の揺れとみて1行にする（寸法は部屋数の多い方）
         clusters = []
         for row in sorted(merged.values(), key=lambda r: -r['total']):
@@ -213,7 +220,11 @@ def build(csv_dir, out_dir, master_path):
     os_path = os.path.join(csv_dir, 'operatingstatus.csv')
     if not os.path.exists(tr_path):
         sys.exit(f'ERROR: {tr_path} がありません')
-    rows = [r for r in load_csv(tr_path) if r.get('有効') == 't']
+    all_rows = load_csv(tr_path)
+    rows = [r for r in all_rows if r.get('有効') == 't']
+    all_by_store = collections.defaultdict(list)
+    for r in all_rows:
+        all_by_store[r['店舗']].append(r)
     src_time = datetime.datetime.fromtimestamp(os.path.getmtime(tr_path))
     now = datetime.datetime.now()
     warnings = []
@@ -237,6 +248,13 @@ def build(csv_dir, out_dir, master_path):
             continue
         src = [r for r in by_store.get(m['faboc_store'], []) if match_unit(r, m['unit_filter'])
                or (m.get('bike_rows') == '1' and m['mode'] == 'type' and is_bike(r) and r['トランクルームUNIT'] != '駐車場')]
+        # keep_rooms … 無効・JR で外れるが、いまのHPに載っている部屋。表には出すが常に×（2026-10-13 指示）
+        keep = set((m.get('keep_rooms') or '').split())
+        if keep:
+            have = {id(r) for r in src}
+            for r in all_by_store.get(m['faboc_store'], []):
+                if id(r) not in have and room_no(r['トランクルームNo'], r['店舗']) in keep:
+                    src.append(dict(r, _keep=True))
         if not src:
             warnings.append(f'{m["key"]}: 該当ユニットなし（{m["faboc_store"]} / {m["unit_filter"]}）')
         stores[m['key']] = build_store(m, src)
