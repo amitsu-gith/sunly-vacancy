@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-04 17:17",
- "source_time": "2026-09-04 09:19",
+ "generated_at": "2026-10-13 17:40",
+ "source_time": "2026-10-13 17:02",
  "stores": {
   "sagamidai_tr": {
    "name": "TR相模台",
@@ -263,7 +263,7 @@
    "list_page": "/okugai/sagamihara",
    "campaign": "６か月以上利用で初月賃料無料",
    "total": 19,
-   "vacant": 0,
+   "vacant": 1,
    "rows": [
     {
      "type": "1.5帖",
@@ -286,8 +286,10 @@
      "area": null,
      "price": 14300,
      "total": 3,
-     "vacant": 0,
-     "rooms": []
+     "vacant": 1,
+     "rooms": [
+      "nT3"
+     ]
     },
     {
      "type": "3.2帖",
@@ -326,7 +328,7 @@
      "rooms": []
     }
    ],
-   "summary": "満室御礼"
+   "summary": "2.6帖 空き室有り"
   },
   "isobe": {
    "name": "磯部",
@@ -336,7 +338,7 @@
    "list_page": "/okugai/sagamihara",
    "campaign": "６か月以上利用で初月賃料無料",
    "total": 7,
-   "vacant": 1,
+   "vacant": 0,
    "rows": [
     {
      "type": "2.3帖",
@@ -383,13 +385,11 @@
      "area": 6.16,
      "price": 17600,
      "total": 2,
-     "vacant": 1,
-     "rooms": [
-      "sT8"
-     ]
+     "vacant": 0,
+     "rooms": []
     }
    ],
-   "summary": "4.0帖 空き室有り"
+   "summary": "満室御礼"
   },
   "kamiimaizumi": {
    "name": "上今泉",
@@ -399,7 +399,7 @@
    "list_page": "/okugai/ebina",
    "campaign": "６か月以上利用で初月賃料無料",
    "total": 32,
-   "vacant": 1,
+   "vacant": 0,
    "rows": [
     {
      "type": "3.2帖",
@@ -434,10 +434,8 @@
      "area": null,
      "price": 28600,
      "total": 17,
-     "vacant": 1,
-     "rooms": [
-      "T1806"
-     ]
+     "vacant": 0,
+     "rooms": []
     },
     {
      "type": "8.4帖",
@@ -452,7 +450,7 @@
      "rooms": []
     }
    ],
-   "summary": "8.4帖 空き室有り"
+   "summary": "満室御礼"
   },
   "oikawa": {
    "name": "及川",
@@ -535,7 +533,7 @@
    "list_page": "/okugai/atsugi",
    "campaign": "６か月以上利用で初月賃料無料",
    "total": 27,
-   "vacant": 2,
+   "vacant": 1,
    "rows": [
     {
      "type": "1.5帖",
@@ -546,9 +544,8 @@
      "area": null,
      "price": 6600,
      "total": 5,
-     "vacant": 2,
+     "vacant": 1,
      "rooms": [
-      "DT34",
       "DT35"
      ]
     },
@@ -720,7 +717,7 @@
    "list_page": "/okugai/atsugi",
    "campaign": "６か月以上利用で初月賃料無料",
    "total": 60,
-   "vacant": 3,
+   "vacant": 4,
    "rows": [
     {
      "type": "1.5帖",
@@ -759,8 +756,10 @@
      "area": null,
      "price": 11000,
      "total": 9,
-     "vacant": 0,
-     "rooms": []
+     "vacant": 1,
+     "rooms": [
+      "T36"
+     ]
     },
     {
      "type": "3.2帖",
@@ -823,7 +822,7 @@
      "rooms": []
     }
    ],
-   "summary": "1.5帖 空き室有り"
+   "summary": "1.5帖・2.6帖 空き室有り"
   },
   "kamiogino": {
    "name": "上荻野",
@@ -884,7 +883,7 @@
    "list_page": "/okugai/ebina",
    "campaign": "６か月以上利用で初月賃料無料",
    "total": 6,
-   "vacant": 0,
+   "vacant": 1,
    "rows": [
     {
      "type": "2.2帖",
@@ -919,11 +918,13 @@
      "area": null,
      "price": 30800,
      "total": 2,
-     "vacant": 0,
-     "rooms": []
+     "vacant": 1,
+     "rooms": [
+      "T3302"
+     ]
     }
    ],
-   "summary": "満室御礼"
+   "summary": "8.4帖 空き室有り"
   },
   "sagamidai": {
    "name": "相模台",
@@ -1118,7 +1119,7 @@
    "list_page": "/okugai/yamato",
    "campaign": "６か月以上利用で初月賃料無料",
    "total": 76,
-   "vacant": 1,
+   "vacant": 2,
    "rows": [
     {
      "type": "2.0帖",
@@ -1177,8 +1178,10 @@
      "area": null,
      "price": 22000,
      "total": 17,
-     "vacant": 0,
-     "rooms": []
+     "vacant": 1,
+     "rooms": [
+      "T27"
+     ]
     },
     {
      "type": "6.3帖",
@@ -1207,7 +1210,7 @@
      "rooms": []
     }
    ],
-   "summary": "6.3帖 空き室有り"
+   "summary": "4.1帖・6.3帖 空き室有り"
   },
   "simoogino_c": {
    "name": "下荻野C",
@@ -1328,7 +1331,7 @@
    "list_page": "/okugai/atsugi",
    "campaign": "６か月以上利用で初月賃料無料",
    "total": 22,
-   "vacant": 0,
+   "vacant": 1,
    "rows": [
     {
      "type": "2.0帖",
@@ -1375,8 +1378,10 @@
      "area": null,
      "price": 12100,
      "total": 2,
-     "vacant": 0,
-     "rooms": []
+     "vacant": 1,
+     "rooms": [
+      "T14"
+     ]
     },
     {
      "type": "4.1帖",
@@ -1403,7 +1408,7 @@
      "rooms": []
     }
    ],
-   "summary": "満室御礼"
+   "summary": "3.2帖 空き室有り"
   },
   "tumadanisi_b": {
    "name": "妻田西B",
@@ -1559,8 +1564,8 @@
    "page": "/atsugi/tanasawa",
    "list_page": "/okugai/atsugi",
    "campaign": "６か月以上利用で初月賃料無料",
-   "total": 15,
-   "vacant": 0,
+   "total": 18,
+   "vacant": 2,
    "rows": [
     {
      "type": "8.4帖",
@@ -1570,9 +1575,12 @@
      "h": 230,
      "area": null,
      "price": 24200,
-     "total": 14,
-     "vacant": 0,
-     "rooms": []
+     "total": 17,
+     "vacant": 2,
+     "rooms": [
+      "T6",
+      "T8"
+     ]
     },
     {
      "type": "8.4帖",
@@ -1587,7 +1595,7 @@
      "rooms": []
     }
    ],
-   "summary": "満室御礼"
+   "summary": "8.4帖 空き室有り"
   },
   "tumadakita_a": {
    "name": "妻田北A",
@@ -1851,7 +1859,7 @@
    "list_page": "/okugai/atsugi",
    "campaign": "６か月以上利用で初月賃料無料",
    "total": 27,
-   "vacant": 0,
+   "vacant": 1,
    "rows": [
     {
      "type": "2.0帖",
@@ -1910,11 +1918,13 @@
      "area": null,
      "price": 27500,
      "total": 3,
-     "vacant": 0,
-     "rooms": []
+     "vacant": 1,
+     "rooms": [
+      "sT3025"
+     ]
     }
    ],
-   "summary": "満室御礼"
+   "summary": "8.0帖 空き室有り"
   },
   "nakaogino": {
    "name": "中荻野",
@@ -2142,7 +2152,7 @@
    "page": "/atsugi/simoogino/a",
    "list_page": "/okugai/atsugi",
    "campaign": "６か月以上利用で初月賃料無料",
-   "total": 9,
+   "total": 8,
    "vacant": 0,
    "rows": [
     {
@@ -2153,7 +2163,7 @@
      "h": 230,
      "area": null,
      "price": 11000,
-     "total": 3,
+     "total": 2,
      "vacant": 0,
      "rooms": []
     },
@@ -2460,7 +2470,7 @@
    "list_page": "/okugai/atsugi",
    "campaign": "６か月以上利用で初月賃料無料",
    "total": 16,
-   "vacant": 1,
+   "vacant": 2,
    "rows": [
     {
      "type": "1.5帖",
@@ -2471,8 +2481,10 @@
      "area": null,
      "price": 6600,
      "total": 5,
-     "vacant": 0,
-     "rooms": []
+     "vacant": 1,
+     "rooms": [
+      "DT16"
+     ]
     },
     {
      "type": "2.6帖",
@@ -2525,7 +2537,7 @@
      "rooms": []
     }
    ],
-   "summary": "2.6帖 空き室有り"
+   "summary": "1.5帖・2.6帖 空き室有り"
   },
   "hayasi_c": {
    "name": "林C",
@@ -2658,7 +2670,7 @@
    "list_page": "/okugai/atsugi",
    "campaign": "６か月以上利用で初月賃料無料",
    "total": 19,
-   "vacant": 1,
+   "vacant": 3,
    "rows": [
     {
      "type": "W1.4帖 室内分割",
@@ -2731,11 +2743,14 @@
      "area": null,
      "price": 26400,
      "total": 7,
-     "vacant": 0,
-     "rooms": []
+     "vacant": 2,
+     "rooms": [
+      "T3405",
+      "T3412"
+     ]
     }
    ],
-   "summary": "W1.4帖 室内分割 空き室有り"
+   "summary": "W1.4帖 室内分割・8.4帖 空き室有り"
   },
   "hayasi_d_bike": {
    "name": "林D",
@@ -2831,7 +2846,7 @@
    "list_page": "/okugai/atsugi",
    "campaign": "６か月以上利用で初月賃料無料",
    "total": 15,
-   "vacant": 1,
+   "vacant": 0,
    "rows": [
     {
      "type": "2.2帖",
@@ -2890,13 +2905,11 @@
      "area": null,
      "price": 26400,
      "total": 7,
-     "vacant": 1,
-     "rooms": [
-      "T3803"
-     ]
+     "vacant": 0,
+     "rooms": []
     }
    ],
-   "summary": "8.4帖 空き室有り"
+   "summary": "満室御礼"
   },
   "tumadanisi_c_bike": {
    "name": "妻田西C",
@@ -2991,7 +3004,7 @@
    "list_page": "/okunai/atsugi",
    "campaign": "６か月以上利用で初月賃料無料",
    "total": 37,
-   "vacant": 28,
+   "vacant": 27,
    "rows": [
     {
      "room": "101",
@@ -3003,7 +3016,7 @@
      "h": 220,
      "area": 1.65,
      "price": 11440,
-     "vacant": true
+     "vacant": false
     },
     {
      "room": "102",
@@ -3438,7 +3451,7 @@
      "vacant": true
     }
    ],
-   "summary": "空室有（28室）"
+   "summary": "空室有（27室）"
   },
   "tumadakita_b": {
    "name": "妻田北B",
@@ -3448,7 +3461,7 @@
    "list_page": "/okugai/atsugi",
    "campaign": "６か月以上利用で初月賃料無料",
    "total": 17,
-   "vacant": 0,
+   "vacant": 1,
    "rows": [
     {
      "type": "2.0帖",
@@ -3459,8 +3472,10 @@
      "area": null,
      "price": 8800,
      "total": 6,
-     "vacant": 0,
-     "rooms": []
+     "vacant": 1,
+     "rooms": [
+      "sT3911"
+     ]
     },
     {
      "type": "4.0帖",
@@ -3499,7 +3514,7 @@
      "rooms": []
     }
    ],
-   "summary": "満室御礼"
+   "summary": "2.0帖 空き室有り"
   },
   "tumadakita_b_bike": {
    "name": "妻田北B",
@@ -3509,7 +3524,7 @@
    "list_page": "/bike/atsugi",
    "campaign": "６か月以上利用で初月賃料無料",
    "total": 2,
-   "vacant": 1,
+   "vacant": 0,
    "rows": [
     {
      "room": "BKdT1",
@@ -3533,10 +3548,10 @@
      "h": 185,
      "area": null,
      "price": 13200,
-     "vacant": true
+     "vacant": false
     }
    ],
-   "summary": "空室有（1台）"
+   "summary": "満室御礼"
   },
   "sakuramori": {
    "name": "桜森1丁目",
@@ -3546,7 +3561,7 @@
    "list_page": "/okugai/yamato",
    "campaign": "６か月以上利用で初月賃料無料",
    "total": 21,
-   "vacant": 1,
+   "vacant": 0,
    "rows": [
     {
      "room": "S01",
@@ -3750,7 +3765,7 @@
      "h": 215,
      "area": 3.53,
      "price": 11000,
-     "vacant": true
+     "vacant": false
     },
     {
      "room": "S18",
@@ -3801,7 +3816,7 @@
      "vacant": false
     }
    ],
-   "summary": "空室有（1室）"
+   "summary": "満室御礼"
   },
   "sakuramori_bike": {
    "name": "桜森1丁目",
@@ -4186,7 +4201,7 @@
    "list_page": "/bike/atsugi",
    "campaign": "６か月以上利用で初月賃料無料",
    "total": 8,
-   "vacant": 1,
+   "vacant": 0,
    "rows": [
     {
      "room": "BKST01",
@@ -4258,7 +4273,7 @@
      "h": 179,
      "area": 3.18,
      "price": 13200,
-     "vacant": true
+     "vacant": false
     },
     {
      "room": "BKST07",
@@ -4285,7 +4300,7 @@
      "vacant": false
     }
    ],
-   "summary": "空室有（1台）"
+   "summary": "満室御礼"
   },
   "nakashinden_bike": {
    "name": "中新田",
@@ -4295,7 +4310,7 @@
    "list_page": "/bike/ebina",
    "campaign": "６か月以上利用で初月賃料無料",
    "total": 10,
-   "vacant": 1,
+   "vacant": 2,
    "rows": [
     {
      "room": "BKST01",
@@ -4379,7 +4394,7 @@
      "h": 179,
      "area": 3.18,
      "price": 13750,
-     "vacant": false
+     "vacant": true
     },
     {
      "room": "BKST08",
@@ -4418,7 +4433,7 @@
      "vacant": true
     }
    ],
-   "summary": "空室有（1台）"
+   "summary": "空室有（2台）"
   },
   "simoimaizumi": {
    "name": "下今泉",
@@ -4828,7 +4843,7 @@
      "h": 165,
      "area": 3.24,
      "price": 16500,
-     "vacant": false
+     "vacant": true
     },
     {
      "room": "PT2",
@@ -4876,7 +4891,7 @@
      "h": 165,
      "area": 3.24,
      "price": 16500,
-     "vacant": true
+     "vacant": false
     },
     {
      "room": "PT6",
@@ -5792,7 +5807,7 @@
    "list_page": "/bike/atsugi",
    "campaign": "６か月以上利用で初月賃料無料",
    "total": 3,
-   "vacant": 2,
+   "vacant": 0,
    "rows": [
     {
      "room": "BKST1",
@@ -5804,7 +5819,7 @@
      "h": 179,
      "area": 2.26,
      "price": 13200,
-     "vacant": true
+     "vacant": false
     },
     {
      "room": "BKST2",
@@ -5828,10 +5843,10 @@
      "h": 179,
      "area": 2.26,
      "price": 13200,
-     "vacant": true
+     "vacant": false
     }
    ],
-   "summary": "空室有（2台）"
+   "summary": "満室御礼"
   },
   "nakasinden_a": {
    "name": "中新田A",
@@ -6095,5 +6110,7 @@
    "summary": "満室御礼"
   }
  },
- "warnings": []
+ "warnings": [
+  "検算差異 旭町: operatingstatus 空室=1 / 生成=0"
+ ]
 }
