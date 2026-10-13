@@ -37,12 +37,16 @@
 - `data-note` … 空室があるときだけ赤字の下に出す文言。省略時は店舗マスタの `campaign` 列。`data-note=""` で非表示
 - `data-repeat` … table で N 行ごとに項目名の行を挟む。既定は室番号別の表が 10 行ごと、タイプ別は挟まない
 - `data-fallback` … データ取得に失敗したときに出す文言
+- `data-size` … summary の文字サイズ（px）。省略時は 20（一覧ページの大きさ）。店舗ページは元のページの大きさ（店舗マスタの `detail_px`）を入れる。`test.html` の貼り付けHTMLには自動で入る
+- 表の見出しは「NO」「月額賃料」、幅・奥・高はすべて cm
+- タイプ別の表は、タイプと幅・奥・高が同じで金額だけ違う行を、一番高い金額の1行にまとめる（空室数・室番号は合算）
 - 室番号別の表（`mode=room` の店舗）だけ：
   - `data-filter` … 室番号の頭文字で絞る（例 `PT`、`PL,PT`）。バイクのポータブル・プレートを別の表にするとき
-  - `data-cols` … 出す列と順番。`no,tatami,w,d,h,area,price,status`（既定は `no,tatami,w,d,h,price,status`）
+  - `data-cols` … 出す列と順番。`no,tatami,w,d,h,area,price,status`（既定は `no,tatami,w,d,h,price,status`）。幅・奥・高はどれか1つを書けば3つそろえて出す
   - `data-link` … 室番号のリンク先。`{room}` を室番号に置き換える（例 `#{room}画像`）。ページ内リンクはその id がページにあるときだけ張る
 
 ## 店舗マスタの列
 `key`（埋め込みで使うID）/ `faboc_store`（ファボック店舗名そのまま）/ `unit_filter`（コンテナ・トランクルーム・バイク）/
 `hp_name` / `kind`（outdoor・indoor・bike）/ `mode`（type=タイプ別表・room=室番号別表）/ `page_path` / `list_page` / `publish` /
-`campaign`（空室があるときだけ表示する文言。全店「６か月以上利用で初月賃料無料」を初期値にした）/ `note`
+`campaign`（空室があるときだけ表示する文言。全店「６か月以上利用で初月賃料無料」を初期値にした）/ `note` /
+`detail_px`（店舗ページの一言の文字サイズ。2026-10-13 に公開中のページから測った値。一言が無いページは空欄）
