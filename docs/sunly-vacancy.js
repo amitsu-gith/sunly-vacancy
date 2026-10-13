@@ -6,6 +6,10 @@
  * data-store は store_master.csv の key。data-mode は summary | table。
  * data-note     … 空室があるときだけ出す文言（省略時は店舗マスタの campaign 列）。空文字で非表示
  * data-repeat   … table で N 行ごとに項目名の行を挟む（既定: 室番号別=10、タイプ別=0）
+ * 室番号別の表（mode=room の店舗）だけ:
+ *   data-filter … 室番号の頭文字で絞る（例 "PT"、"PL,PT"）
+ *   data-cols   … 出す列と順番。no,tatami,w,d,h,area,price,status（既定 no,tatami,w,d,h,price,status）
+ *   data-link   … 室番号のリンク先。{room} を室番号に置き換える（例 "#{room}画像"）。ページ内リンクは同じ id があるときだけ張る
  * 取得に失敗した場合は data-fallback の文言を表示（無ければ何も表示しない）。
  */
 (function () {
@@ -75,13 +79,38 @@
           '<td class="' + (ok ? 'sv-ok' : 'sv-ng') + '">' + (ok ? '〇' : '×') + '</td></tr>';
       });
     } else {
-      head = '<tr><th>NO,</th><th>帖</th><th>幅<br>' + unit + '</th><th>奥<br>' + unit + '</th><th>高<br>' + unit + '</th><th>月額<br>賃料</th><th>空室<br>状況</th></tr>';
+      /* data-filter … 室番号の頭文字で絞る（例 "PT"。カンマ区切りで複数可）
+       * data-cols   … 出す列と順番（no,tatami,w,d,h,area,price,status）
+       * data-link   … 室番号のリンク先。{room} を室番号に置き換え、ページ内に同じ id があるときだけ張る（例 "#{room}画像"） */
+      var filters = (el.getAttribute('data-filter') || '').split(',').map(function (s) { return s.trim(); }).filter(Boolean);
+      var rows = filters.length ? e.rows.filter(function (r) {
+        return filters.some(function (p) { return String(r.room).indexOf(p) === 0; });
+      }) : e.rows;
+      var cols = (el.getAttribute('data-cols') || 'no,tatami,w,d,h,price,status').split(',').map(function (s) { return s.trim(); });
+      var link = el.getAttribute('data-link');
+      var COLS = {
+        no: ['NO,', function (r) {
+          var t = esc(r.room) + (r.irregular ? '<br>変形' : '');
+          if (link) {
+            var href = link.replace('{room}', r.room);
+            if (href.charAt(0) !== '#' || document.getElementById(href.slice(1))) t = '<a href="' + esc(href) + '">' + t + '</a>';
+          }
+          return '<td>' + t + '</td>';
+        }],
+        tatami: ['帖', function (r) { return '<td>' + (r.tatami == null ? esc(r.type) : r.tatami) + '</td>'; }],
+        w: ['幅<br>' + unit, function (r) { return '<td>' + f(r.w) + '</td>'; }],
+        d: ['奥<br>' + unit, function (r) { return '<td>' + f(r.d) + '</td>'; }],
+        h: ['高<br>' + unit, function (r) { return '<td>' + f(r.h) + '</td>'; }],
+        area: ['面積<br>㎡', function (r) { return '<td>' + (r.area == null ? '' : r.area) + '</td>'; }],
+        price: ['月額<br>賃料', function (r) { return '<td>' + yen(r.price) + '</td>'; }],
+        status: ['空室<br>状況', function (r) { return '<td class="' + (r.vacant ? 'sv-ok' : 'sv-ng') + '">' + (r.vacant ? '〇' : '×') + '</td>'; }]
+      };
+      cols = cols.filter(function (c) { return COLS[c]; });
+      head = '<tr>' + cols.map(function (c) { return '<th>' + COLS[c][0] + '</th>'; }).join('') + '</tr>';
       h += head;
-      e.rows.forEach(function (r, i) {
+      rows.forEach(function (r, i) {
         if (rep && i && i % rep === 0) h += head;
-        h += '<tr><td>' + esc(r.room) + (r.irregular ? '<br>変形' : '') + '</td><td>' + (r.tatami == null ? esc(r.type) : r.tatami) + '</td>' +
-          '<td>' + f(r.w) + '</td><td>' + f(r.d) + '</td><td>' + f(r.h) + '</td><td>' + yen(r.price) + '</td>' +
-          '<td class="' + (r.vacant ? 'sv-ok' : 'sv-ng') + '">' + (r.vacant ? '〇' : '×') + '</td></tr>';
+        h += '<tr>' + cols.map(function (c) { return COLS[c][1](r); }).join('') + '</tr>';
       });
     }
     h += '</table></div>';
