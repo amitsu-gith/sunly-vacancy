@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-13 20:29",
+ "generated_at": "2026-10-13 20:36",
  "source_time": "2026-10-13 17:02",
  "stores": {
   "sagamidai_tr": {
@@ -264,7 +264,7 @@
    "page": "/sagamihara/minami/araisono",
    "list_page": "/okugai/sagamihara",
    "campaign": "６か月以上利用で初月賃料無料",
-   "show_area": false,
+   "show_area": true,
    "detail_px": 24,
    "total": 19,
    "vacant": 1,
@@ -1979,7 +1979,7 @@
    "page": "/atsugi/nakaogino",
    "list_page": "/okugai/atsugi",
    "campaign": "６か月以上利用で初月賃料無料",
-   "show_area": false,
+   "show_area": true,
    "detail_px": 26,
    "total": 25,
    "vacant": 0,
@@ -2380,7 +2380,7 @@
    "page": "/atsugi/hayasi/a",
    "list_page": "/okugai/atsugi",
    "campaign": "６か月以上利用で初月賃料無料",
-   "show_area": false,
+   "show_area": true,
    "detail_px": null,
    "total": 8,
    "vacant": 0,
@@ -2841,7 +2841,7 @@
    "page": "/atsugi/tumadanisi/c",
    "list_page": "/okugai/atsugi",
    "campaign": "６か月以上利用で初月賃料無料",
-   "show_area": false,
+   "show_area": true,
    "detail_px": 26,
    "total": 15,
    "vacant": 0,
