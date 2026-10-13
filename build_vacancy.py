@@ -82,6 +82,11 @@ def sqm_of(kind_label):
 IGNORE_IN_TYPE = ('中通路', '変形')   # 種別ラベルから除く語（2026-09-04 指示。中通路は同じタイプに統合、変形は別フラグで扱う）
 
 
+def area_of(w, d):
+    """ファボックに面積が無いときの面積（㎡）。幅×奥で計算する（2026-10-13 指示）"""
+    return round(w * d / 10000, 2) if w and d else None
+
+
 def type_label(s):
     s = nfkc(s)
     for w in IGNORE_IN_TYPE:
@@ -133,6 +138,7 @@ def build_store(m, src):
         'name': m['hp_name'], 'kind': m['kind'], 'mode': m['mode'],
         'page': m['page_path'], 'list_page': m['list_page'],
         'campaign': (m.get('campaign') or '').strip(),   # 空室があるときだけ表示する文言
+        'show_area': m.get('show_area') == '1',              # 表に面積の列を出す（いまのHPに広さ㎡がある店舗）
         'detail_px': num(m.get('detail_px') or ''),          # 店舗ページの一言の文字サイズ（元のページに合わせる）
         'total': len(src), 'vacant': 0, 'rows': [],
     }
@@ -147,7 +153,7 @@ def build_store(m, src):
                 'type': type_label(r['トランクルーム種別']),
                 'tatami': num(r['面積（畳）']) or tatami_of(r['トランクルーム種別']),
                 'w': num(r['幅cm']), 'd': num(r['奥行cm']), 'h': num(r['高さcm']),
-                'area': num(r['面積（平米）']) or sqm_of(r['トランクルーム種別']),
+                'area': num(r['面積（平米）']) or sqm_of(r['トランクルーム種別']) or area_of(num(r['幅cm']), num(r['奥行cm'])),
                 'price': num(r['金額（税込）']),
                 'vacant': v,
             })
@@ -191,7 +197,7 @@ def build_store(m, src):
             else:
                 clusters.append(row)
         for row in sorted(clusters, key=lambda r: (r['bike'], r['tatami'] or 999, r['price'] or 0, r['w'] or 0)):
-            row['area'] = row.pop('areas').most_common(1)[0][0]
+            row['area'] = row.pop('areas').most_common(1)[0][0] or area_of(row['w'], row['d'])
             row['rooms'] = sorted(row['rooms'], key=room_sort_key)
             if row.pop('bike'):
                 entry['total'] -= row['total']     # バイクガレージの行は店舗の総数・空室数・一言に数えない（バイクのページで数える）

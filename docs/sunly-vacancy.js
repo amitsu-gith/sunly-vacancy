@@ -13,6 +13,8 @@
  *   data-cols   … 出す列。no,tatami,area,w,d,h,price,status（既定 no,tatami,w,d,h,price,status）
  *                 順番は全店共通で NO・帖・面積・幅・奥・高・月額賃料・空室状況（書いた順は関係ない）
  *                 幅・奥・高はどれか1つを書けば3つそろえて出す
+ *                 帖はファボックに帖の値があるときだけ出す。面積は店舗マスタの show_area の店舗なら書かなくても出す
+ * タイプ別の表（mode=type）は、show_area の店舗だけタイプの右に面積の列を出す
  *   data-link   … 室番号のリンク先。{room} を室番号に置き換える（例 "#{room}画像"）。ページ内リンクは同じ id があるときだけ張る
  * 取得に失敗した場合は data-fallback の文言を表示（無ければ何も表示しない）。
  */
@@ -73,12 +75,15 @@
     if (isNaN(rep)) rep = e.mode === 'room' ? 10 : 0;
     var head;
     if (e.mode === 'type') {
-      head = '<tr><th>タイプ</th><th>幅<br>' + unit + '</th><th>奥<br>' + unit + '</th><th>高<br>' + unit + '</th><th>月額賃料</th><th>NO</th><th>空室<br>状況</th></tr>';
+      /* 面積の列は店舗マスタの show_area の店舗だけ（いまのHPに広さ㎡がある店舗） */
+      var showArea = !!e.show_area;
+      head = '<tr><th>タイプ</th>' + (showArea ? '<th>面積<br>㎡</th>' : '') + '<th>幅<br>' + unit + '</th><th>奥<br>' + unit + '</th><th>高<br>' + unit + '</th><th>月額賃料</th><th>NO</th><th>空室<br>状況</th></tr>';
       h += head;
       e.rows.forEach(function (r, i) {
         if (rep && i && i % rep === 0) h += head;
         var ok = r.vacant > 0;
-        h += '<tr><td>' + esc(r.type) + '</td><td>' + f(r.w) + '</td><td>' + f(r.d) + '</td><td>' + f(r.h) + '</td>' +
+        h += '<tr><td>' + esc(r.type) + '</td>' + (showArea ? '<td>' + (r.area == null ? '' : r.area) + '</td>' : '') +
+          '<td>' + f(r.w) + '</td><td>' + f(r.d) + '</td><td>' + f(r.h) + '</td>' +
           '<td>' + yen(r.price) + '</td><td class="sv-rooms">' + esc(r.rooms.join(' ')) + '</td>' +
           '<td class="' + (ok ? 'sv-ok' : 'sv-ng') + '">' + (ok ? '〇' : '×') + '</td></tr>';
       });
@@ -102,7 +107,7 @@
           }
           return '<td>' + t + '</td>';
         }],
-        tatami: ['帖', function (r) { return '<td>' + (r.tatami == null ? esc(r.type) : r.tatami) + '</td>'; }],
+        tatami: ['帖', function (r) { return '<td>' + (r.tatami == null ? '' : r.tatami) + '</td>'; }],
         w: ['幅<br>' + unit, function (r) { return '<td>' + f(r.w) + '</td>'; }],
         d: ['奥<br>' + unit, function (r) { return '<td>' + f(r.d) + '</td>'; }],
         h: ['高<br>' + unit, function (r) { return '<td>' + f(r.h) + '</td>'; }],
@@ -113,6 +118,11 @@
       /* 列の順番は全店共通（NO・帖・面積・幅・奥・高・月額賃料・空室状況）。data-cols は出す列を選ぶだけ。
        * 幅・奥・高はそろえて出す（どれかが指定されていれば3つとも出す） */
       if (cols.some(function (c) { return c === 'w' || c === 'd' || c === 'h'; })) cols = cols.concat(['w', 'd', 'h']);
+      /* 帖はファボックに帖の値がある店舗だけ、面積は店舗マスタの show_area の店舗にも出す */
+      var hasTatami = rows.some(function (r) { return r.tatami != null; });
+      cols = cols.filter(function (c) { return c !== 'tatami'; });
+      if (hasTatami) cols.push('tatami');
+      if (e.show_area) cols.push('area');
       cols = ORDER.filter(function (c) { return cols.indexOf(c) >= 0; });
       head = '<tr>' + cols.map(function (c) { return '<th>' + COLS[c][0] + '</th>'; }).join('') + '</tr>';
       h += head;
