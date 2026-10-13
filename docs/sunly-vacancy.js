@@ -82,7 +82,9 @@
       e.rows.forEach(function (r, i) {
         if (rep && i && i % rep === 0) h += head;
         var ok = r.vacant > 0;
-        h += '<tr><td>' + esc(r.type) + '</td>' + (showArea ? '<td>' + (r.area == null ? '' : r.area) + '</td>' : '') +
+        /* 「バイクガレージ」は列が広がらないよう「バイク」で改行する */
+        var type = r.type === 'バイクガレージ' ? 'バイク<br>ガレージ' : esc(r.type);
+        h += '<tr><td>' + type + '</td>' + (showArea ? '<td>' + (r.area == null ? '' : r.area) + '</td>' : '') +
           '<td>' + f(r.w) + '</td><td>' + f(r.d) + '</td><td>' + f(r.h) + '</td>' +
           '<td>' + yen(r.price) + '</td><td class="sv-rooms">' + esc(r.rooms.join(' ')) + '</td>' +
           '<td class="' + (ok ? 'sv-ok' : 'sv-ng') + '">' + (ok ? '〇' : '×') + '</td></tr>';
