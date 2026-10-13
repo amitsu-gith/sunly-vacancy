@@ -73,6 +73,12 @@ def tatami_of(kind_label):
     return float(m.group(1)) if m else None
 
 
+def sqm_of(kind_label):
+    """種別ラベルの括弧内の平米（例 0.69帖(1.14平米) → 1.14）。範囲（1.84~2.88平米）は拾わない"""
+    m = re.search(r'\(\s*(\d+(?:\.\d+)?)\s*(?:平米|m2)', nfkc(kind_label))
+    return float(m.group(1)) if m else None
+
+
 IGNORE_IN_TYPE = ('中通路', '変形')   # 種別ラベルから除く語（2026-09-04 指示。中通路は同じタイプに統合、変形は別フラグで扱う）
 
 
@@ -130,7 +136,7 @@ def build_store(m, src):
                 'type': type_label(r['トランクルーム種別']),
                 'tatami': num(r['面積（畳）']) or tatami_of(r['トランクルーム種別']),
                 'w': num(r['幅cm']), 'd': num(r['奥行cm']), 'h': num(r['高さcm']),
-                'area': num(r['面積（平米）']),
+                'area': num(r['面積（平米）']) or sqm_of(r['トランクルーム種別']),
                 'price': num(r['金額（税込）']),
                 'vacant': v,
             })
