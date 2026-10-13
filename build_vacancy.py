@@ -123,6 +123,7 @@ def build_store(m, src):
         'name': m['hp_name'], 'kind': m['kind'], 'mode': m['mode'],
         'page': m['page_path'], 'list_page': m['list_page'],
         'campaign': (m.get('campaign') or '').strip(),   # 空室があるときだけ表示する文言
+        'detail_px': num(m.get('detail_px') or ''),          # 店舗ページの一言の文字サイズ（元のページに合わせる）
         'total': len(src), 'vacant': 0, 'rows': [],
     }
     if m['mode'] == 'room':
@@ -153,12 +154,23 @@ def build_store(m, src):
             if r['ステータス'] == '貸出待ち':
                 g['vacant'] += 1
                 g['rooms'].append(room_no(r['トランクルームNo'], r['店舗']) + ('(変形)' if is_irregular(r) else ''))
-        for g in sorted(groups.values(), key=lambda g: (g['tatami'] or 999, g['price'] or 0, g['type'])):
+        # タイプと幅・奥・高が同じで金額だけ違う行は、一番高い金額の1行にまとめる（空室数・室番号は合算）
+        merged = collections.OrderedDict()
+        for g in sorted(groups.values(), key=lambda g: (g['tatami'] or 999, -(g['price'] or 0), g['type'])):
             w, d, h, a = g['dims'].most_common(1)[0][0]
-            entry['rows'].append({'type': g['type'], 'tatami': g['tatami'], 'w': w, 'd': d, 'h': h, 'area': a,
-                                  'price': g['price'], 'total': g['total'], 'vacant': g['vacant'],
-                                  'rooms': sorted(g['rooms'], key=room_sort_key)})
+            row = merged.get((g['type'], w, d, h))
+            if row is None:
+                merged[(g['type'], w, d, h)] = {'type': g['type'], 'tatami': g['tatami'], 'w': w, 'd': d, 'h': h, 'area': a,
+                                                'price': g['price'], 'total': g['total'], 'vacant': g['vacant'],
+                                                'rooms': list(g['rooms'])}
+            else:
+                row['total'] += g['total']
+                row['vacant'] += g['vacant']
+                row['rooms'] += g['rooms']
             entry['vacant'] += g['vacant']
+        for row in sorted(merged.values(), key=lambda r: (r['tatami'] or 999, r['price'] or 0, r['type'])):
+            row['rooms'] = sorted(row['rooms'], key=room_sort_key)
+            entry['rows'].append(row)
     entry['summary'] = summary_text(entry)
     return entry
 

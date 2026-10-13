@@ -15,10 +15,20 @@ document.getElementById('t').textContent = 'プレビュー: ' + key;
 document.getElementById('s').innerHTML = '<div class="sunly-vacancy" data-store="' + key + '" data-mode="summary" data-fallback="最新の空室状況はお問い合わせください"></div>';
 document.getElementById('d').innerHTML = '<div class="sunly-vacancy" data-store="' + key + '" data-mode="table"></div>';
 var src = location.href.replace(/[?#].*$/, '').replace(/[^\/]*$/, '') + 'sunly-vacancy.js';
-document.getElementById('code').textContent =
-  '<div class="sunly-vacancy" data-store="' + key + '" data-mode="summary" data-fallback="最新の空室状況はお問い合わせください"></div>\n' +
-  '<div class="sunly-vacancy" data-store="' + key + '" data-mode="table"></div>\n' +
-  '<script src="' + src + '" defer><\/script>';
+/* 店舗ページの一言は元のページの文字サイズ（店舗マスタの detail_px）に合わせる */
+function showCode(px) {
+  var sum = function (size) {
+    return '<div class="sunly-vacancy" data-store="' + key + '" data-mode="summary"' + (size ? ' data-size="' + size + '"' : '') +
+      ' data-fallback="最新の空室状況はお問い合わせください"></div>';
+  };
+  document.getElementById('code').textContent =
+    '【一覧ページ】\n' + sum(null) + '\n<script src="' + src + '" defer><\/script>\n\n' +
+    '【店舗ページ】一言\n' + sum(px) + '\n\n' +
+    '【店舗ページ】表\n<div class="sunly-vacancy" data-store="' + key + '" data-mode="table"></div>\n<script src="' + src + '" defer><\/script>';
+}
+showCode(null);
+fetch('vacancy.json', { cache: 'no-store' }).then(function (r) { return r.json(); })
+  .then(function (d) { var e = d.stores[key]; if (e) showCode(e.detail_px); }).catch(function () {});
 var sc = document.createElement('script'); sc.src = 'sunly-vacancy.js'; sc.defer = true; document.body.appendChild(sc);
 </script>
 </body></html>

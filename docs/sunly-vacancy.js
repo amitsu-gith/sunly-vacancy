@@ -6,9 +6,12 @@
  * data-store は store_master.csv の key。data-mode は summary | table。
  * data-note     … 空室があるときだけ出す文言（省略時は店舗マスタの campaign 列）。空文字で非表示
  * data-repeat   … table で N 行ごとに項目名の行を挟む（既定: 室番号別=10、タイプ別=0）
+ * data-size     … summary の文字サイズ（px）。既定は一覧ページと同じ 20。店舗ページは元のページの大きさ（店舗マスタの detail_px）を入れる
+ * 幅・奥・高はすべて cm で出す。
  * 室番号別の表（mode=room の店舗）だけ:
  *   data-filter … 室番号の頭文字で絞る（例 "PT"、"PL,PT"）
  *   data-cols   … 出す列と順番。no,tatami,w,d,h,area,price,status（既定 no,tatami,w,d,h,price,status）
+ *                 幅・奥・高はどれか1つを書けば3つそろえて出す
  *   data-link   … 室番号のリンク先。{room} を室番号に置き換える（例 "#{room}画像"）。ページ内リンクは同じ id があるときだけ張る
  * 取得に失敗した場合は data-fallback の文言を表示（無ければ何も表示しない）。
  */
@@ -40,11 +43,6 @@
     });
   }
   function yen(n) { return n == null ? '' : '￥' + Number(n).toLocaleString('ja-JP'); }
-  function toM(cmv) {
-    if (cmv == null) return '';
-    var v = Number(cmv) / 100;
-    return (Math.round(v * 100) % 10 === 0) ? v.toFixed(1) : v.toFixed(2);
-  }
   function toCm(v) { return v == null ? '' : String(v); }
 
   /* 空室があるときだけ出すキャンペーン文言。data-note 属性があれば優先、無ければ店舗マスタの campaign */
@@ -55,21 +53,26 @@
     return note ? '<br>' + esc(note) : '';
   }
 
+  /* data-size があればその大きさ（px）にする。無ければ CSS の既定（20px） */
+  function sizeAttr(el) {
+    var px = parseInt(el.getAttribute('data-size'), 10);
+    return px > 0 ? ' style="font-size:' + px + 'px"' : '';
+  }
+
   function renderSummary(el, e, data) {
-    el.innerHTML = '<div class="sv-summary">' + esc(e.summary) + campaignLine(el, e) + '</div>';
+    el.innerHTML = '<div class="sv-summary"' + sizeAttr(el) + '>' + esc(e.summary) + campaignLine(el, e) + '</div>';
   }
 
   function renderTable(el, e, data) {
     var h = '<div class="sv-wrap"><table class="sv-table">';
-    var useM = e.kind === 'outdoor';
-    var unit = useM ? 'ｍ' : '㎝';
-    var f = useM ? toM : toCm;
+    var unit = 'cm';
+    var f = toCm;
     /* 長い表は N 行ごとに項目名の行を挟む（data-repeat で変更可。既定は室番号別=10、タイプ別=なし） */
     var rep = parseInt(el.getAttribute('data-repeat'), 10);
     if (isNaN(rep)) rep = e.mode === 'room' ? 10 : 0;
     var head;
     if (e.mode === 'type') {
-      head = '<tr><th>タイプ</th><th>幅<br>' + unit + '</th><th>奥<br>' + unit + '</th><th>高<br>' + unit + '</th><th>月額<br>賃料</th><th>NO,</th><th>空室<br>状況</th></tr>';
+      head = '<tr><th>タイプ</th><th>幅<br>' + unit + '</th><th>奥<br>' + unit + '</th><th>高<br>' + unit + '</th><th>月額賃料</th><th>NO</th><th>空室<br>状況</th></tr>';
       h += head;
       e.rows.forEach(function (r, i) {
         if (rep && i && i % rep === 0) h += head;
@@ -89,7 +92,7 @@
       var cols = (el.getAttribute('data-cols') || 'no,tatami,w,d,h,price,status').split(',').map(function (s) { return s.trim(); });
       var link = el.getAttribute('data-link');
       var COLS = {
-        no: ['NO,', function (r) {
+        no: ['NO', function (r) {
           var t = esc(r.room) + (r.irregular ? '<br>変形' : '');
           if (link) {
             var href = link.replace('{room}', r.room);
@@ -102,9 +105,16 @@
         d: ['奥<br>' + unit, function (r) { return '<td>' + f(r.d) + '</td>'; }],
         h: ['高<br>' + unit, function (r) { return '<td>' + f(r.h) + '</td>'; }],
         area: ['面積<br>㎡', function (r) { return '<td>' + (r.area == null ? '' : r.area) + '</td>'; }],
-        price: ['月額<br>賃料', function (r) { return '<td>' + yen(r.price) + '</td>'; }],
+        price: ['月額賃料', function (r) { return '<td>' + yen(r.price) + '</td>'; }],
         status: ['空室<br>状況', function (r) { return '<td class="' + (r.vacant ? 'sv-ok' : 'sv-ng') + '">' + (r.vacant ? '〇' : '×') + '</td>'; }]
       };
+      /* 幅・奥・高はそろえて出す（どれかが指定されていれば、最初の位置に w,d,h の順で入れる） */
+      var dimAt = -1;
+      cols = cols.filter(function (c, i) {
+        if (c === 'w' || c === 'd' || c === 'h') { if (dimAt < 0) dimAt = i; return false; }
+        return true;
+      });
+      if (dimAt >= 0) cols.splice(Math.min(dimAt, cols.length), 0, 'w', 'd', 'h');
       cols = cols.filter(function (c) { return COLS[c]; });
       head = '<tr>' + cols.map(function (c) { return '<th>' + COLS[c][0] + '</th>'; }).join('') + '</tr>';
       h += head;
