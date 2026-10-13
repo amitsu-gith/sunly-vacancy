@@ -109,6 +109,11 @@ def is_irregular(row):
     return any('変形' in nfkc(row.get(c, '')) for c in ('トランクルームNo', 'トランクルーム種別', '備考', 'メモ'))
 
 
+def top_price(counter):
+    """部屋数が一番多い金額（同数なら高い方）。無ければ None"""
+    return max(counter.items(), key=lambda x: (x[1], x[0]))[0] if counter else None
+
+
 def is_vacant(r):
     """空室か。店舗マスタの keep_rooms で残した部屋（無効・JR）は常に満室（×）"""
     return r['ステータス'] == '貸出待ち' and not r.get('_keep')
@@ -166,7 +171,8 @@ def build_store(m, src):
             entry['vacant'] += v
         entry['rows'] = sorted(items, key=lambda x: room_sort_key(x['room']))
     else:
-        # タイプ（帖）と幅・奥・高が同じ部屋を1行にまとめる。金額は一番高いもの、空室数・室番号は合算（2026-10-13 指示）
+        # タイプ（帖）と幅・奥・高が同じ部屋を1行にまとめる。空室数・室番号は合算（2026-10-13 指示）
+        # 金額はファボックの部屋ごとの値がばらつくので、空室の部屋の金額（空室が無ければ部屋数が一番多い金額）にする（2026-10-13 指示）
         # 向きが違う部屋（580×220 と 220×580 など）は別の行。bike_rows=1 の店舗はバイクの部屋を「バイクガレージ」の行にする
         merged = collections.OrderedDict()
         for r in src:
@@ -177,10 +183,13 @@ def build_store(m, src):
             if row is None:
                 row = merged[(name,) + dims] = {'type': name, 'tatami': None if bike else tatami_of(name),
                                                 'w': dims[0], 'd': dims[1], 'h': dims[2], 'areas': collections.Counter(),
-                                                'price': None, 'total': 0, 'vacant': 0, 'rooms': [], 'bike': bike}
+                                                'prices': collections.Counter(), 'vprices': collections.Counter(),
+                                                'total': 0, 'vacant': 0, 'rooms': [], 'bike': bike}
             p = num(r['金額（税込）'])
-            if p is not None and (row['price'] is None or p > row['price']):
-                row['price'] = p
+            if p is not None:
+                row['prices'][p] += 1
+                if is_vacant(r):
+                    row['vprices'][p] += 1
             row['areas'][num(r['面積（平米）'])] += 1
             row['total'] += 1
             if is_vacant(r):
@@ -194,8 +203,8 @@ def build_store(m, src):
                 if c['type'] == row['type'] and all(
                         a is not None and b is not None and abs(a - b) <= DIM_TOLERANCE
                         for a, b in zip((c['w'], c['d'], c['h']), (row['w'], row['d'], row['h']))):
-                    if row['price'] is not None and (c['price'] is None or row['price'] > c['price']):
-                        c['price'] = row['price']
+                    c['prices'].update(row['prices'])
+                    c['vprices'].update(row['vprices'])
                     c['areas'].update(row['areas'])
                     c['total'] += row['total']
                     c['vacant'] += row['vacant']
@@ -203,6 +212,9 @@ def build_store(m, src):
                     break
             else:
                 clusters.append(row)
+        for row in clusters:
+            v, a = row.pop('vprices'), row.pop('prices')
+            row['price'] = top_price(v) or top_price(a)
         for row in sorted(clusters, key=lambda r: (r['bike'], r['tatami'] or 999, r['price'] or 0, r['w'] or 0)):
             row['area'] = row.pop('areas').most_common(1)[0][0] or area_of(row['w'], row['d'])
             row['rooms'] = sorted(row['rooms'], key=room_sort_key)
