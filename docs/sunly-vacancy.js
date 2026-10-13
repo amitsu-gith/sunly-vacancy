@@ -10,7 +10,8 @@
  * 幅・奥・高はすべて cm で出す。
  * 室番号別の表（mode=room の店舗）だけ:
  *   data-filter … 室番号の頭文字で絞る（例 "PT"、"PL,PT"）
- *   data-cols   … 出す列と順番。no,tatami,w,d,h,area,price,status（既定 no,tatami,w,d,h,price,status）
+ *   data-cols   … 出す列。no,tatami,area,w,d,h,price,status（既定 no,tatami,w,d,h,price,status）
+ *                 順番は全店共通で NO・帖・面積・幅・奥・高・月額賃料・空室状況（書いた順は関係ない）
  *                 幅・奥・高はどれか1つを書けば3つそろえて出す
  *   data-link   … 室番号のリンク先。{room} を室番号に置き換える（例 "#{room}画像"）。ページ内リンクは同じ id があるときだけ張る
  * 取得に失敗した場合は data-fallback の文言を表示（無ければ何も表示しない）。
@@ -83,7 +84,7 @@
       });
     } else {
       /* data-filter … 室番号の頭文字で絞る（例 "PT"。カンマ区切りで複数可）
-       * data-cols   … 出す列と順番（no,tatami,w,d,h,area,price,status）
+       * data-cols   … 出す列（no,tatami,area,w,d,h,price,status）。順番は ORDER で固定
        * data-link   … 室番号のリンク先。{room} を室番号に置き換え、ページ内に同じ id があるときだけ張る（例 "#{room}画像"） */
       var filters = (el.getAttribute('data-filter') || '').split(',').map(function (s) { return s.trim(); }).filter(Boolean);
       var rows = filters.length ? e.rows.filter(function (r) {
@@ -91,6 +92,7 @@
       }) : e.rows;
       var cols = (el.getAttribute('data-cols') || 'no,tatami,w,d,h,price,status').split(',').map(function (s) { return s.trim(); });
       var link = el.getAttribute('data-link');
+      var ORDER = ['no', 'tatami', 'area', 'w', 'd', 'h', 'price', 'status'];
       var COLS = {
         no: ['NO', function (r) {
           var t = esc(r.room) + (r.irregular ? '<br>変形' : '');
@@ -108,14 +110,10 @@
         price: ['月額賃料', function (r) { return '<td>' + yen(r.price) + '</td>'; }],
         status: ['空室<br>状況', function (r) { return '<td class="' + (r.vacant ? 'sv-ok' : 'sv-ng') + '">' + (r.vacant ? '〇' : '×') + '</td>'; }]
       };
-      /* 幅・奥・高はそろえて出す（どれかが指定されていれば、最初の位置に w,d,h の順で入れる） */
-      var dimAt = -1;
-      cols = cols.filter(function (c, i) {
-        if (c === 'w' || c === 'd' || c === 'h') { if (dimAt < 0) dimAt = i; return false; }
-        return true;
-      });
-      if (dimAt >= 0) cols.splice(Math.min(dimAt, cols.length), 0, 'w', 'd', 'h');
-      cols = cols.filter(function (c) { return COLS[c]; });
+      /* 列の順番は全店共通（NO・帖・面積・幅・奥・高・月額賃料・空室状況）。data-cols は出す列を選ぶだけ。
+       * 幅・奥・高はそろえて出す（どれかが指定されていれば3つとも出す） */
+      if (cols.some(function (c) { return c === 'w' || c === 'd' || c === 'h'; })) cols = cols.concat(['w', 'd', 'h']);
+      cols = ORDER.filter(function (c) { return cols.indexOf(c) >= 0; });
       head = '<tr>' + cols.map(function (c) { return '<th>' + COLS[c][0] + '</th>'; }).join('') + '</tr>';
       h += head;
       rows.forEach(function (r, i) {
