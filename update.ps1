@@ -25,7 +25,9 @@ git add docs
 git diff --cached --quiet
 if ($LASTEXITCODE -ne 0) {
     git commit -m ("空室状況更新 " + (Get-Date -Format 'yyyy-MM-dd HH:mm'))
+    if ($LASTEXITCODE -ne 0) { throw 'git commit が失敗しました（このPCの Git の名前・メール設定を確認）' }
     git push
+    if ($LASTEXITCODE -ne 0) { throw 'git push が失敗しました（GitHub のログインを確認）' }
     Write-Host '公開しました'
 } else {
     Write-Host '変更なし'
