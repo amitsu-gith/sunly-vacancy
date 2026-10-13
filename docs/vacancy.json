@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-13 19:06",
+ "generated_at": "2026-10-13 20:01",
  "source_time": "2026-10-13 17:02",
  "stores": {
   "sagamidai_tr": {
@@ -273,11 +273,11 @@
      "w": 110,
      "d": 220,
      "h": 230,
-     "area": null,
      "price": 8800,
      "total": 5,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "2.6帖",
@@ -285,13 +285,13 @@
      "w": 190,
      "d": 220,
      "h": 230,
-     "area": null,
      "price": 14300,
      "total": 3,
      "vacant": 1,
      "rooms": [
       "nT3"
-     ]
+     ],
+     "area": null
     },
     {
      "type": "3.2帖",
@@ -299,11 +299,11 @@
      "w": 200,
      "d": 265,
      "h": 200,
-     "area": null,
      "price": 15400,
      "total": 4,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "4.1帖",
@@ -311,11 +311,11 @@
      "w": 290,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 17600,
      "total": 4,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "8.4帖",
@@ -323,11 +323,11 @@
      "w": 230,
      "d": 590,
      "h": 230,
-     "area": null,
      "price": 30800,
      "total": 3,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     }
    ],
    "summary": "2.6帖 空き室有り"
@@ -349,11 +349,11 @@
      "w": 166,
      "d": 229,
      "h": 232,
-     "area": 3.8,
      "price": 15400,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": 3.8
     },
     {
      "type": "2.6帖",
@@ -361,11 +361,11 @@
      "w": 190,
      "d": 225,
      "h": 235,
-     "area": null,
      "price": 14300,
      "total": 3,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "3.2帖",
@@ -373,11 +373,11 @@
      "w": 200,
      "d": 265,
      "h": 200,
-     "area": null,
      "price": 15400,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "4.0帖",
@@ -385,11 +385,11 @@
      "w": 280,
      "d": 220,
      "h": 220,
-     "area": 6.16,
      "price": 17600,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": 6.16
     }
    ],
    "summary": "満室御礼"
@@ -411,11 +411,23 @@
      "w": 200,
      "d": 260,
      "h": 200,
-     "area": null,
      "price": 16500,
      "total": 8,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
+    },
+    {
+     "type": "4.1帖",
+     "tatami": 4.1,
+     "w": 235,
+     "d": 290,
+     "h": 235,
+     "price": 20900,
+     "total": 2,
+     "vacant": 0,
+     "rooms": [],
+     "area": null
     },
     {
      "type": "4.1帖",
@@ -423,11 +435,11 @@
      "w": 290,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 20900,
-     "total": 4,
+     "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "8.4帖",
@@ -435,11 +447,11 @@
      "w": 230,
      "d": 590,
      "h": 230,
-     "area": null,
      "price": 30800,
      "total": 20,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     }
    ],
    "summary": "満室御礼"
@@ -461,11 +473,11 @@
      "w": 210,
      "d": 170,
      "h": 200,
-     "area": null,
      "price": 9900,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "3.2帖",
@@ -473,11 +485,11 @@
      "w": 200,
      "d": 260,
      "h": 200,
-     "area": null,
      "price": 12100,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "4.0帖",
@@ -485,11 +497,11 @@
      "w": 280,
      "d": 220,
      "h": 220,
-     "area": null,
      "price": 14300,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "4.1帖",
@@ -497,11 +509,11 @@
      "w": 290,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 14300,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "8.4帖",
@@ -509,11 +521,11 @@
      "w": 230,
      "d": 590,
      "h": 230,
-     "area": null,
      "price": 24200,
      "total": 7,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     }
    ],
    "summary": "満室御礼"
@@ -535,13 +547,13 @@
      "w": 110,
      "d": 220,
      "h": 230,
-     "area": null,
      "price": 6600,
      "total": 5,
      "vacant": 1,
      "rooms": [
       "DT35"
-     ]
+     ],
+     "area": null
     },
     {
      "type": "2.6帖",
@@ -549,11 +561,23 @@
      "w": 190,
      "d": 210,
      "h": 230,
-     "area": null,
      "price": 11000,
-     "total": 9,
+     "total": 8,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
+    },
+    {
+     "type": "2.6帖",
+     "tatami": 2.6,
+     "w": 190,
+     "d": 230,
+     "h": 230,
+     "price": 11000,
+     "total": 1,
+     "vacant": 0,
+     "rooms": [],
+     "area": null
     },
     {
      "type": "4.1帖",
@@ -561,23 +585,11 @@
      "w": 290,
      "d": 235,
      "h": 235,
-     "area": null,
-     "price": 14300,
-     "total": 9,
-     "vacant": 0,
-     "rooms": []
-    },
-    {
-     "type": "4.1帖",
-     "tatami": 4.1,
-     "w": 290,
-     "d": 230,
-     "h": 230,
-     "area": null,
      "price": 16500,
-     "total": 1,
+     "total": 10,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "8.0帖",
@@ -585,11 +597,11 @@
      "w": 590,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 27500,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "8.4帖",
@@ -597,11 +609,11 @@
      "w": 230,
      "d": 590,
      "h": 230,
-     "area": null,
      "price": 26400,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     }
    ],
    "summary": "1.5帖 空き室有り"
@@ -623,11 +635,11 @@
      "w": 110,
      "d": 220,
      "h": 230,
-     "area": null,
      "price": 6600,
      "total": 5,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "2.0帖",
@@ -635,11 +647,11 @@
      "w": 220,
      "d": 140,
      "h": 230,
-     "area": null,
      "price": 8800,
      "total": 3,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "3.0帖",
@@ -647,11 +659,11 @@
      "w": 220,
      "d": 220,
      "h": 230,
-     "area": null,
      "price": 12100,
      "total": 6,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "3.2帖",
@@ -659,11 +671,11 @@
      "w": 200,
      "d": 260,
      "h": 200,
-     "area": null,
      "price": 12100,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "4.0帖",
@@ -671,11 +683,23 @@
      "w": 220,
      "d": 280,
      "h": 220,
-     "area": null,
      "price": 14300,
-     "total": 4,
+     "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
+    },
+    {
+     "type": "4.0帖",
+     "tatami": 4.0,
+     "w": 280,
+     "d": 220,
+     "h": 220,
+     "price": 14300,
+     "total": 2,
+     "vacant": 0,
+     "rooms": [],
+     "area": null
     },
     {
      "type": "6.0帖",
@@ -683,11 +707,11 @@
      "w": 220,
      "d": 450,
      "h": 230,
-     "area": null,
      "price": 22000,
      "total": 3,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "8.4帖",
@@ -695,11 +719,11 @@
      "w": 230,
      "d": 590,
      "h": 230,
-     "area": null,
      "price": 26400,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     }
    ],
    "summary": "満室御礼"
@@ -721,7 +745,6 @@
      "w": 110,
      "d": 220,
      "h": 230,
-     "area": null,
      "price": 6600,
      "total": 20,
      "vacant": 3,
@@ -729,7 +752,8 @@
       "DT44",
       "DT63",
       "DT65"
-     ]
+     ],
+     "area": null
     },
     {
      "type": "2.2帖",
@@ -737,11 +761,11 @@
      "w": 210,
      "d": 170,
      "h": 200,
-     "area": null,
      "price": 9900,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "2.6帖",
@@ -749,13 +773,13 @@
      "w": 190,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 11000,
      "total": 9,
      "vacant": 1,
      "rooms": [
       "T36"
-     ]
+     ],
+     "area": null
     },
     {
      "type": "3.2帖",
@@ -763,11 +787,11 @@
      "w": 200,
      "d": 260,
      "h": 200,
-     "area": null,
      "price": 12100,
      "total": 3,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "4.1帖",
@@ -775,11 +799,11 @@
      "w": 290,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 14300,
      "total": 6,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "8.0帖",
@@ -787,11 +811,11 @@
      "w": 210,
      "d": 570,
      "h": 230,
-     "area": 11.97,
      "price": 24200,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": 11.97
     },
     {
      "type": "8.4帖",
@@ -799,11 +823,11 @@
      "w": 230,
      "d": 590,
      "h": 230,
-     "area": null,
      "price": 26400,
      "total": 19,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     }
    ],
    "summary": "1.5帖・2.6帖 空き室有り"
@@ -825,11 +849,11 @@
      "w": 140,
      "d": 220,
      "h": 220,
-     "area": null,
      "price": 8800,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "3.0帖",
@@ -837,11 +861,11 @@
      "w": 230,
      "d": 220,
      "h": 230,
-     "area": null,
      "price": 12100,
      "total": 6,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "6.0帖",
@@ -849,13 +873,13 @@
      "w": 430,
      "d": 220,
      "h": 230,
-     "area": null,
      "price": 22000,
      "total": 1,
      "vacant": 1,
      "rooms": [
       "sT3608"
-     ]
+     ],
+     "area": null
     }
    ],
    "summary": "6.0帖 空き室有り"
@@ -877,11 +901,11 @@
      "w": 210,
      "d": 170,
      "h": 200,
-     "area": null,
      "price": 12100,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "3.2帖",
@@ -889,11 +913,11 @@
      "w": 200,
      "d": 260,
      "h": 200,
-     "area": null,
      "price": 16500,
      "total": 3,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "8.4帖",
@@ -901,13 +925,13 @@
      "w": 230,
      "d": 590,
      "h": 230,
-     "area": null,
      "price": 30800,
      "total": 2,
      "vacant": 1,
      "rooms": [
       "T3302"
-     ]
+     ],
+     "area": null
     }
    ],
    "summary": "8.4帖 空き室有り"
@@ -929,11 +953,11 @@
      "w": 190,
      "d": 185,
      "h": 215,
-     "area": null,
      "price": 13750,
      "total": 6,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "3.2帖",
@@ -941,11 +965,11 @@
      "w": 185,
      "d": 285,
      "h": 215,
-     "area": null,
      "price": 18150,
      "total": 11,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     }
    ],
    "summary": "満室御礼"
@@ -1005,11 +1029,11 @@
      "w": 110,
      "d": 170,
      "h": 210,
-     "area": null,
      "price": 5500,
      "total": 8,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "2.0帖",
@@ -1017,11 +1041,11 @@
      "w": 140,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 8800,
      "total": 4,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "2.2帖",
@@ -1029,11 +1053,11 @@
      "w": 210,
      "d": 170,
      "h": 210,
-     "area": null,
      "price": 9900,
      "total": 8,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "3.2帖",
@@ -1041,13 +1065,25 @@
      "w": 200,
      "d": 260,
      "h": 200,
-     "area": null,
      "price": 12100,
      "total": 4,
      "vacant": 1,
      "rooms": [
       "T1635"
-     ]
+     ],
+     "area": null
+    },
+    {
+     "type": "4.0帖",
+     "tatami": 4.0,
+     "w": 210,
+     "d": 280,
+     "h": 220,
+     "price": 14300,
+     "total": 1,
+     "vacant": 0,
+     "rooms": [],
+     "area": null
     },
     {
      "type": "4.0帖",
@@ -1055,11 +1091,11 @@
      "w": 280,
      "d": 220,
      "h": 220,
-     "area": null,
      "price": 14300,
-     "total": 4,
+     "total": 3,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "4.1帖",
@@ -1067,11 +1103,11 @@
      "w": 290,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 14300,
      "total": 6,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "8.4帖",
@@ -1079,11 +1115,11 @@
      "w": 230,
      "d": 590,
      "h": 230,
-     "area": null,
      "price": 24200,
      "total": 4,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     }
    ],
    "summary": "3.2帖 空き室有り"
@@ -1102,14 +1138,26 @@
     {
      "type": "2.0帖",
      "tatami": 2.0,
+     "w": 14,
+     "d": 230,
+     "h": 230,
+     "price": 13200,
+     "total": 1,
+     "vacant": 0,
+     "rooms": [],
+     "area": null
+    },
+    {
+     "type": "2.0帖",
+     "tatami": 2.0,
      "w": 140,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 13200,
-     "total": 24,
+     "total": 23,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "2.6帖",
@@ -1117,11 +1165,11 @@
      "w": 190,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 15400,
      "total": 3,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "3.2帖",
@@ -1129,11 +1177,11 @@
      "w": 200,
      "d": 260,
      "h": 200,
-     "area": null,
      "price": 17600,
      "total": 8,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "4.1帖",
@@ -1141,13 +1189,13 @@
      "w": 290,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 22000,
      "total": 17,
      "vacant": 1,
      "rooms": [
       "T27"
-     ]
+     ],
+     "area": null
     },
     {
      "type": "6.3帖",
@@ -1155,13 +1203,13 @@
      "w": 220,
      "d": 470,
      "h": 210,
-     "area": null,
      "price": 30800,
      "total": 7,
      "vacant": 1,
      "rooms": [
       "nT54"
-     ]
+     ],
+     "area": null
     },
     {
      "type": "8.4帖",
@@ -1169,11 +1217,11 @@
      "w": 230,
      "d": 590,
      "h": 230,
-     "area": null,
      "price": 38500,
      "total": 17,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     }
    ],
    "summary": "4.1帖・6.3帖 空き室有り"
@@ -1195,11 +1243,11 @@
      "w": 140,
      "d": 100,
      "h": 230,
-     "area": null,
      "price": 5500,
      "total": 4,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "1.5帖",
@@ -1207,13 +1255,13 @@
      "w": 110,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 6600,
      "total": 5,
      "vacant": 1,
      "rooms": [
       "sT3709"
-     ]
+     ],
+     "area": null
     },
     {
      "type": "3.0帖",
@@ -1221,11 +1269,11 @@
      "w": 210,
      "d": 220,
      "h": 220,
-     "area": null,
      "price": 12100,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "3.2帖",
@@ -1233,11 +1281,11 @@
      "w": 200,
      "d": 260,
      "h": 200,
-     "area": null,
      "price": 12100,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "4.0帖",
@@ -1245,11 +1293,11 @@
      "w": 280,
      "d": 210,
      "h": 230,
-     "area": null,
      "price": 14300,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "4.1帖",
@@ -1257,11 +1305,11 @@
      "w": 230,
      "d": 290,
      "h": 230,
-     "area": null,
      "price": 14300,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "5.0帖",
@@ -1269,11 +1317,11 @@
      "w": 350,
      "d": 220,
      "h": 220,
-     "area": null,
      "price": 16500,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "8.4帖",
@@ -1281,11 +1329,11 @@
      "w": 230,
      "d": 590,
      "h": 230,
-     "area": null,
      "price": 26400,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     }
    ],
    "summary": "1.5帖 空き室有り"
@@ -1307,11 +1355,11 @@
      "w": 140,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 8800,
      "total": 8,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "2.2帖",
@@ -1319,11 +1367,11 @@
      "w": 210,
      "d": 170,
      "h": 200,
-     "area": null,
      "price": 9900,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "2.6帖",
@@ -1331,11 +1379,11 @@
      "w": 190,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 11000,
      "total": 6,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "3.2帖",
@@ -1343,13 +1391,13 @@
      "w": 200,
      "d": 260,
      "h": 200,
-     "area": null,
      "price": 12100,
      "total": 2,
      "vacant": 1,
      "rooms": [
       "T14"
-     ]
+     ],
+     "area": null
     },
     {
      "type": "4.1帖",
@@ -1357,11 +1405,11 @@
      "w": 290,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 14300,
      "total": 4,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "8.4帖",
@@ -1369,11 +1417,11 @@
      "w": 230,
      "d": 590,
      "h": 230,
-     "area": null,
      "price": 26400,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     }
    ],
    "summary": "3.2帖 空き室有り"
@@ -1395,11 +1443,11 @@
      "w": 110,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 6600,
      "total": 5,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "2.0帖",
@@ -1407,11 +1455,11 @@
      "w": 140,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 8800,
      "total": 8,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "3.2帖",
@@ -1419,11 +1467,11 @@
      "w": 200,
      "d": 260,
      "h": 200,
-     "area": null,
      "price": 12100,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "8.4帖",
@@ -1431,11 +1479,11 @@
      "w": 230,
      "d": 590,
      "h": 230,
-     "area": null,
      "price": 26400,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     }
    ],
    "summary": "満室御礼"
@@ -1452,16 +1500,16 @@
    "vacant": 0,
    "rows": [
     {
-     "type": "L字型2.9帖(▲160×100)",
+     "type": "2.9帖",
      "tatami": 2.9,
      "w": 280,
      "d": 220,
      "h": 220,
-     "area": null,
      "price": 12100,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     }
    ],
    "summary": "満室御礼"
@@ -1483,11 +1531,11 @@
      "w": 190,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 14300,
      "total": 3,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "4.1帖",
@@ -1495,11 +1543,11 @@
      "w": 230,
      "d": 290,
      "h": 230,
-     "area": null,
      "price": 20900,
      "total": 3,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "8.4帖",
@@ -1507,11 +1555,11 @@
      "w": 230,
      "d": 590,
      "h": 230,
-     "area": null,
      "price": 29700,
      "total": 10,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     }
    ],
    "summary": "満室御礼"
@@ -1533,14 +1581,14 @@
      "w": 230,
      "d": 590,
      "h": 230,
-     "area": null,
      "price": 26400,
      "total": 18,
      "vacant": 2,
      "rooms": [
       "T6",
       "T8"
-     ]
+     ],
+     "area": null
     }
    ],
    "summary": "8.4帖 空き室有り"
@@ -1557,28 +1605,28 @@
    "vacant": 0,
    "rows": [
     {
-     "type": "W1.0帖 室内分割 半高",
+     "type": "1.0帖",
      "tatami": 1.0,
      "w": 140,
      "d": 130,
      "h": 110,
-     "area": null,
      "price": 4400,
      "total": 4,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
-     "type": "1.2帖 室内分割",
+     "type": "1.2帖",
      "tatami": 1.2,
      "w": 110,
      "d": 180,
      "h": 230,
-     "area": null,
      "price": 5500,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "1.5帖",
@@ -1586,11 +1634,11 @@
      "w": 110,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 6600,
      "total": 5,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "2.0帖",
@@ -1598,11 +1646,11 @@
      "w": 140,
      "d": 210,
      "h": 220,
-     "area": null,
      "price": 8800,
      "total": 4,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "2.2帖",
@@ -1610,11 +1658,11 @@
      "w": 210,
      "d": 170,
      "h": 200,
-     "area": null,
      "price": 9900,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "2.6帖",
@@ -1622,11 +1670,11 @@
      "w": 190,
      "d": 220,
      "h": 230,
-     "area": null,
      "price": 11000,
      "total": 3,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "3.0帖",
@@ -1634,11 +1682,11 @@
      "w": 210,
      "d": 220,
      "h": 220,
-     "area": null,
      "price": 12100,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "3.2帖",
@@ -1646,11 +1694,11 @@
      "w": 200,
      "d": 260,
      "h": 200,
-     "area": null,
      "price": 16500,
      "total": 3,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "4.0帖",
@@ -1658,11 +1706,35 @@
      "w": 220,
      "d": 280,
      "h": 220,
-     "area": null,
      "price": 15400,
-     "total": 2,
+     "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
+    },
+    {
+     "type": "4.0帖",
+     "tatami": 4.0,
+     "w": 280,
+     "d": 220,
+     "h": 220,
+     "price": 15400,
+     "total": 1,
+     "vacant": 0,
+     "rooms": [],
+     "area": null
+    },
+    {
+     "type": "4.1帖",
+     "tatami": 4.1,
+     "w": 230,
+     "d": 290,
+     "h": 23,
+     "price": 14300,
+     "total": 1,
+     "vacant": 0,
+     "rooms": [],
+     "area": null
     },
     {
      "type": "4.1帖",
@@ -1670,11 +1742,11 @@
      "w": 290,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 14300,
-     "total": 7,
+     "total": 6,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "5.0帖",
@@ -1682,11 +1754,11 @@
      "w": 350,
      "d": 220,
      "h": 220,
-     "area": null,
      "price": 16500,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "8.4帖",
@@ -1694,11 +1766,23 @@
      "w": 230,
      "d": 590,
      "h": 230,
-     "area": null,
      "price": 28600,
      "total": 22,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
+    },
+    {
+     "type": "バイクガレージ",
+     "tatami": null,
+     "w": 118,
+     "d": 270,
+     "h": 185,
+     "price": 13200,
+     "total": 2,
+     "vacant": 0,
+     "rooms": [],
+     "area": null
     }
    ],
    "summary": "満室御礼"
@@ -1758,11 +1842,11 @@
      "w": 140,
      "d": 220,
      "h": 230,
-     "area": null,
      "price": 8800,
      "total": 4,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "2.6帖",
@@ -1770,11 +1854,11 @@
      "w": 190,
      "d": 220,
      "h": 230,
-     "area": null,
      "price": 11000,
      "total": 6,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "4.0帖",
@@ -1782,11 +1866,23 @@
      "w": 220,
      "d": 280,
      "h": 220,
-     "area": null,
      "price": 14300,
-     "total": 10,
+     "total": 6,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
+    },
+    {
+     "type": "4.0帖",
+     "tatami": 4.0,
+     "w": 280,
+     "d": 220,
+     "h": 220,
+     "price": 14300,
+     "total": 4,
+     "vacant": 0,
+     "rooms": [],
+     "area": null
     },
     {
      "type": "6.0帖",
@@ -1794,11 +1890,11 @@
      "w": 430,
      "d": 220,
      "h": 230,
-     "area": null,
      "price": 22000,
      "total": 4,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "8.0帖",
@@ -1806,13 +1902,25 @@
      "w": 220,
      "d": 580,
      "h": 230,
-     "area": null,
      "price": 27500,
-     "total": 3,
+     "total": 2,
+     "vacant": 0,
+     "rooms": [],
+     "area": null
+    },
+    {
+     "type": "8.0帖",
+     "tatami": 8.0,
+     "w": 580,
+     "d": 220,
+     "h": 230,
+     "price": 27500,
+     "total": 1,
      "vacant": 1,
      "rooms": [
       "sT3025"
-     ]
+     ],
+     "area": null
     }
    ],
    "summary": "8.0帖 空き室有り"
@@ -1829,28 +1937,28 @@
    "vacant": 0,
    "rows": [
     {
-     "type": "W1.2帖 室内分割",
+     "type": "1.2帖",
      "tatami": 1.2,
      "w": 140,
      "d": 130,
      "h": 230,
-     "area": null,
      "price": 5500,
      "total": 4,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
-     "type": "1.2帖 室内分割",
+     "type": "1.2帖",
      "tatami": 1.2,
      "w": 110,
      "d": 180,
      "h": 230,
-     "area": null,
      "price": 11000,
      "total": 3,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "2.6帖",
@@ -1858,11 +1966,11 @@
      "w": 190,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 11000,
      "total": 6,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "3.2帖",
@@ -1870,11 +1978,11 @@
      "w": 200,
      "d": 260,
      "h": 200,
-     "area": null,
      "price": 12100,
      "total": 4,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "8.4帖",
@@ -1882,11 +1990,11 @@
      "w": 230,
      "d": 590,
      "h": 230,
-     "area": null,
      "price": 26400,
      "total": 8,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     }
    ],
    "summary": "満室御礼"
@@ -1934,11 +2042,11 @@
      "w": 110,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 6600,
      "total": 5,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "2.6帖",
@@ -1946,11 +2054,11 @@
      "w": 190,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 11000,
      "total": 3,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "3.2帖",
@@ -1958,11 +2066,11 @@
      "w": 200,
      "d": 260,
      "h": 200,
-     "area": null,
      "price": 12100,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "4.1帖",
@@ -1970,11 +2078,11 @@
      "w": 290,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 14300,
      "total": 6,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "8.4帖",
@@ -1982,11 +2090,11 @@
      "w": 230,
      "d": 590,
      "h": 230,
-     "area": null,
      "price": 24200,
      "total": 4,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     }
    ],
    "summary": "満室御礼"
@@ -2008,11 +2116,11 @@
      "w": 190,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 11000,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "4.1帖",
@@ -2020,11 +2128,11 @@
      "w": 290,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 14300,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "6.0帖",
@@ -2032,11 +2140,11 @@
      "w": 230,
      "d": 450,
      "h": 230,
-     "area": null,
      "price": 19800,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "8.4帖",
@@ -2044,11 +2152,11 @@
      "w": 230,
      "d": 590,
      "h": 230,
-     "area": null,
      "price": 24200,
      "total": 4,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     }
    ],
    "summary": "満室御礼"
@@ -2065,16 +2173,16 @@
    "vacant": 1,
    "rows": [
     {
-     "type": "W1.4帖 室内分割",
+     "type": "1.4帖",
      "tatami": 1.4,
      "w": 180,
      "d": 130,
      "h": 230,
-     "area": null,
      "price": 8800,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "2.0帖",
@@ -2082,11 +2190,11 @@
      "w": 140,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 11000,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "2.2帖",
@@ -2094,23 +2202,23 @@
      "w": 210,
      "d": 170,
      "h": 200,
-     "area": null,
      "price": 13200,
      "total": 4,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
-     "type": "W2.7帖 室内分割",
+     "type": "2.7帖",
      "tatami": 2.7,
      "w": 230,
      "d": 190,
      "h": 230,
-     "area": null,
      "price": 14300,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "3.2帖",
@@ -2118,13 +2226,13 @@
      "w": 200,
      "d": 260,
      "h": 200,
-     "area": null,
      "price": 17600,
      "total": 3,
      "vacant": 1,
      "rooms": [
       "T29"
-     ]
+     ],
+     "area": null
     },
     {
      "type": "4.0帖",
@@ -2132,11 +2240,23 @@
      "w": 280,
      "d": 220,
      "h": 230,
-     "area": null,
      "price": 22000,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
+    },
+    {
+     "type": "4.1帖",
+     "tatami": 4.1,
+     "w": 290,
+     "d": 230,
+     "h": 230,
+     "price": 20900,
+     "total": 4,
+     "vacant": 0,
+     "rooms": [],
+     "area": null
     },
     {
      "type": "4.1帖",
@@ -2144,11 +2264,11 @@
      "w": 230,
      "d": 290,
      "h": 230,
-     "area": null,
      "price": 22000,
-     "total": 10,
+     "total": 6,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "8.0帖",
@@ -2156,11 +2276,11 @@
      "w": 210,
      "d": 570,
      "h": 230,
-     "area": 11.97,
      "price": 28600,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": 11.97
     },
     {
      "type": "8.4帖",
@@ -2168,11 +2288,11 @@
      "w": 230,
      "d": 590,
      "h": 230,
-     "area": null,
      "price": 30800,
      "total": 14,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     }
    ],
    "summary": "3.2帖 空き室有り"
@@ -2194,11 +2314,11 @@
      "w": 210,
      "d": 170,
      "h": 200,
-     "area": null,
      "price": 9900,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "3.2帖",
@@ -2206,11 +2326,11 @@
      "w": 200,
      "d": 260,
      "h": 200,
-     "area": null,
      "price": 12100,
      "total": 3,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "4.1帖",
@@ -2218,11 +2338,11 @@
      "w": 290,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 14300,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "8.4帖",
@@ -2230,11 +2350,11 @@
      "w": 230,
      "d": 590,
      "h": 230,
-     "area": null,
      "price": 26400,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     }
    ],
    "summary": "満室御礼"
@@ -2256,13 +2376,13 @@
      "w": 110,
      "d": 220,
      "h": 230,
-     "area": null,
      "price": 6600,
      "total": 5,
      "vacant": 1,
      "rooms": [
       "DT16"
-     ]
+     ],
+     "area": null
     },
     {
      "type": "2.6帖",
@@ -2270,13 +2390,13 @@
      "w": 190,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 11000,
      "total": 3,
      "vacant": 1,
      "rooms": [
       "T19"
-     ]
+     ],
+     "area": null
     },
     {
      "type": "3.2帖",
@@ -2284,11 +2404,11 @@
      "w": 200,
      "d": 260,
      "h": 200,
-     "area": null,
      "price": 12100,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "4.1帖",
@@ -2296,11 +2416,11 @@
      "w": 290,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 14300,
      "total": 4,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "8.4帖",
@@ -2308,11 +2428,11 @@
      "w": 230,
      "d": 590,
      "h": 230,
-     "area": null,
      "price": 26400,
      "total": 3,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     }
    ],
    "summary": "1.5帖・2.6帖 空き室有り"
@@ -2329,18 +2449,18 @@
    "vacant": 1,
    "rows": [
     {
-     "type": "W1.4帖 室内分割",
+     "type": "1.4帖",
      "tatami": 1.4,
      "w": 190,
      "d": 120,
      "h": 230,
-     "area": null,
      "price": 6600,
      "total": 2,
      "vacant": 1,
      "rooms": [
       "ST2806"
-     ]
+     ],
+     "area": null
     },
     {
      "type": "1.5帖",
@@ -2348,11 +2468,11 @@
      "w": 110,
      "d": 210,
      "h": 230,
-     "area": null,
      "price": 6600,
      "total": 8,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "2.2帖",
@@ -2360,11 +2480,11 @@
      "w": 210,
      "d": 170,
      "h": 200,
-     "area": null,
      "price": 9900,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "2.6帖",
@@ -2372,23 +2492,23 @@
      "w": 190,
      "d": 210,
      "h": 230,
-     "area": null,
      "price": 11000,
      "total": 3,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
-     "type": "W2.7帖 室内分割",
+     "type": "2.7帖",
      "tatami": 2.7,
      "w": 230,
      "d": 190,
      "h": 230,
-     "area": null,
      "price": 11000,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "3.0帖",
@@ -2396,11 +2516,23 @@
      "w": 220,
      "d": 210,
      "h": 230,
-     "area": null,
      "price": 12100,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
+    },
+    {
+     "type": "3.2帖",
+     "tatami": 3.2,
+     "w": 190,
+     "d": 290,
+     "h": 220,
+     "price": 12100,
+     "total": 1,
+     "vacant": 0,
+     "rooms": [],
+     "area": null
     },
     {
      "type": "3.2帖",
@@ -2408,11 +2540,11 @@
      "w": 200,
      "d": 260,
      "h": 200,
-     "area": null,
      "price": 12100,
-     "total": 2,
+     "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "4.0帖",
@@ -2420,11 +2552,23 @@
      "w": 220,
      "d": 280,
      "h": 220,
-     "area": null,
      "price": 14300,
-     "total": 2,
+     "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
+    },
+    {
+     "type": "4.0帖",
+     "tatami": 4.0,
+     "w": 280,
+     "d": 220,
+     "h": 220,
+     "price": 14300,
+     "total": 1,
+     "vacant": 0,
+     "rooms": [],
+     "area": null
     },
     {
      "type": "8.4帖",
@@ -2432,14 +2576,14 @@
      "w": 230,
      "d": 590,
      "h": 230,
-     "area": null,
      "price": 24200,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     }
    ],
-   "summary": "W1.4帖 室内分割 空き室有り"
+   "summary": "1.4帖 空き室有り"
   },
   "hayasi_d": {
    "name": "林D",
@@ -2453,30 +2597,30 @@
    "vacant": 3,
    "rows": [
     {
-     "type": "W1.4帖 室内分割",
+     "type": "1.4帖",
      "tatami": 1.4,
      "w": 190,
      "d": 120,
      "h": 230,
-     "area": null,
      "price": 6600,
      "total": 2,
      "vacant": 1,
      "rooms": [
       "ST3416"
-     ]
+     ],
+     "area": null
     },
     {
-     "type": "W2.7帖 室内分割",
+     "type": "2.7帖",
      "tatami": 2.7,
      "w": 230,
      "d": 190,
      "h": 230,
-     "area": null,
      "price": 11000,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "3.2帖",
@@ -2484,11 +2628,11 @@
      "w": 200,
      "d": 260,
      "h": 200,
-     "area": null,
      "price": 12100,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "4.1帖",
@@ -2496,11 +2640,11 @@
      "w": 290,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 14300,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "8.4帖",
@@ -2508,17 +2652,17 @@
      "w": 230,
      "d": 590,
      "h": 230,
-     "area": null,
      "price": 26400,
      "total": 13,
      "vacant": 2,
      "rooms": [
       "T3405",
       "T3412"
-     ]
+     ],
+     "area": null
     }
    ],
-   "summary": "W1.4帖 室内分割・8.4帖 空き室有り"
+   "summary": "1.4帖・8.4帖 空き室有り"
   },
   "hayasi_d_bike": {
    "name": "林D",
@@ -2563,11 +2707,11 @@
      "w": 100,
      "d": 200,
      "h": 230,
-     "area": null,
      "price": 6600,
      "total": 7,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "2.2帖",
@@ -2575,11 +2719,11 @@
      "w": 210,
      "d": 170,
      "h": 200,
-     "area": null,
      "price": 9900,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "3.0帖",
@@ -2587,11 +2731,11 @@
      "w": 220,
      "d": 200,
      "h": 230,
-     "area": null,
      "price": 12100,
      "total": 4,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "8.0帖",
@@ -2599,11 +2743,11 @@
      "w": 220,
      "d": 580,
      "h": 230,
-     "area": null,
      "price": 26400,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     }
    ],
    "summary": "満室御礼"
@@ -2625,11 +2769,11 @@
      "w": 190,
      "d": 185,
      "h": 215,
-     "area": null,
      "price": 9900,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "2.6帖",
@@ -2637,11 +2781,11 @@
      "w": 190,
      "d": 220,
      "h": 230,
-     "area": null,
      "price": 11000,
      "total": 3,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "3.2帖",
@@ -2649,11 +2793,11 @@
      "w": 185,
      "d": 285,
      "h": 215,
-     "area": null,
      "price": 12100,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "4.0帖",
@@ -2661,11 +2805,11 @@
      "w": 280,
      "d": 230,
      "h": 230,
-     "area": 6.45,
      "price": 14300,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": 6.45
     },
     {
      "type": "8.4帖",
@@ -2673,11 +2817,11 @@
      "w": 230,
      "d": 590,
      "h": 230,
-     "area": null,
      "price": 26400,
      "total": 7,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     }
    ],
    "summary": "満室御礼"
@@ -3243,13 +3387,13 @@
      "w": 140,
      "d": 220,
      "h": 230,
-     "area": null,
      "price": 8800,
      "total": 6,
      "vacant": 1,
      "rooms": [
       "sT3911"
-     ]
+     ],
+     "area": null
     },
     {
      "type": "4.0帖",
@@ -3257,11 +3401,23 @@
      "w": 220,
      "d": 290,
      "h": 230,
-     "area": null,
      "price": 14300,
-     "total": 6,
+     "total": 4,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
+    },
+    {
+     "type": "4.0帖",
+     "tatami": 4.0,
+     "w": 290,
+     "d": 220,
+     "h": 230,
+     "price": 14300,
+     "total": 2,
+     "vacant": 0,
+     "rooms": [],
+     "area": null
     },
     {
      "type": "6.0帖",
@@ -3269,11 +3425,11 @@
      "w": 440,
      "d": 220,
      "h": 230,
-     "area": null,
      "price": 22000,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "8.4帖",
@@ -3281,11 +3437,11 @@
      "w": 230,
      "d": 290,
      "h": 230,
-     "area": null,
      "price": 26400,
      "total": 3,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     }
    ],
    "summary": "2.0帖 空き室有り"
@@ -3661,11 +3817,11 @@
      "w": 190,
      "d": 220,
      "h": 230,
-     "area": 4.18,
      "price": 12100,
      "total": 3,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": 4.18
     },
     {
      "type": "4.0帖",
@@ -3673,11 +3829,11 @@
      "w": 290,
      "d": 220,
      "h": 230,
-     "area": 6.38,
      "price": 15400,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": 6.38
     },
     {
      "type": "8.0帖",
@@ -3685,11 +3841,11 @@
      "w": 220,
      "d": 580,
      "h": 230,
-     "area": 12.76,
      "price": 26400,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": 12.76
     }
    ],
    "summary": "満室御礼"
@@ -4233,11 +4389,11 @@
      "w": 210,
      "d": 220,
      "h": 220,
-     "area": null,
      "price": 16500,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "3.2帖",
@@ -4245,11 +4401,11 @@
      "w": 200,
      "d": 260,
      "h": 200,
-     "area": null,
      "price": 16500,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "4.1帖",
@@ -4257,11 +4413,11 @@
      "w": 290,
      "d": 230,
      "h": 230,
-     "area": null,
      "price": 20900,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "5.0帖",
@@ -4269,11 +4425,11 @@
      "w": 350,
      "d": 220,
      "h": 220,
-     "area": null,
      "price": 23100,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "8.4帖",
@@ -4281,11 +4437,11 @@
      "w": 230,
      "d": 590,
      "h": 230,
-     "area": null,
      "price": 28600,
      "total": 5,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     }
    ],
    "summary": "満室御礼"
@@ -4333,11 +4489,11 @@
      "w": 220,
      "d": 140,
      "h": 230,
-     "area": null,
      "price": 8800,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "4.0帖",
@@ -4345,11 +4501,11 @@
      "w": 280,
      "d": 220,
      "h": 220,
-     "area": null,
      "price": 14300,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "6.0帖",
@@ -4357,11 +4513,11 @@
      "w": 450,
      "d": 220,
      "h": 230,
-     "area": null,
      "price": 22000,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     },
     {
      "type": "8.0帖",
@@ -4369,11 +4525,23 @@
      "w": 220,
      "d": 580,
      "h": 230,
-     "area": null,
      "price": 26400,
-     "total": 4,
+     "total": 3,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
+    },
+    {
+     "type": "8.0帖",
+     "tatami": 8.0,
+     "w": 580,
+     "d": 220,
+     "h": 230,
+     "price": 26400,
+     "total": 1,
+     "vacant": 0,
+     "rooms": [],
+     "area": null
     },
     {
      "type": "8.4帖",
@@ -4381,11 +4549,11 @@
      "w": 230,
      "d": 590,
      "h": 230,
-     "area": null,
      "price": 26400,
      "total": 2,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     }
    ],
    "summary": "満室御礼"
@@ -5837,7 +6005,6 @@
      "w": 190,
      "d": 220,
      "h": 230,
-     "area": null,
      "price": 15400,
      "total": 3,
      "vacant": 3,
@@ -5845,7 +6012,8 @@
       "ST4",
       "ST5",
       "ST6"
-     ]
+     ],
+     "area": null
     },
     {
      "type": "4.0帖",
@@ -5853,13 +6021,13 @@
      "w": 290,
      "d": 220,
      "h": 230,
-     "area": null,
      "price": 24200,
      "total": 2,
      "vacant": 1,
      "rooms": [
       "T3"
-     ]
+     ],
+     "area": null
     },
     {
      "type": "8.0帖",
@@ -5867,11 +6035,11 @@
      "w": 580,
      "d": 220,
      "h": 230,
-     "area": null,
      "price": 38500,
      "total": 1,
      "vacant": 0,
-     "rooms": []
+     "rooms": [],
+     "area": null
     }
    ],
    "summary": "2.6帖・4.0帖 空き室有り"

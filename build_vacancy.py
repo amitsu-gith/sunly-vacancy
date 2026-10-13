@@ -89,6 +89,16 @@ def type_label(s):
     return re.sub(r'\s+', ' ', s).strip()
 
 
+def type_name(kind_label):
+    """タイプ別の表に出すタイプ名。帖の数字だけにする（例 W1.0帖 室内分割 半高 → 1.0帖。2026-10-13 指示）"""
+    m = re.search(r'(\d+(?:\.\d+)?)\s*帖', nfkc(kind_label))
+    return m.group(1) + '帖' if m else type_label(kind_label)
+
+
+BIKE_ROW_NAME = 'バイクガレージ'   # bike_rows=1 の店舗で、コンテナの表に足すバイクの行の名前
+DIM_TOLERANCE = 10                 # タイプ別の表で、同じ行とみなす寸法の差（cm。2026-10-13 指示）
+
+
 def is_irregular(row):
     """変形部屋か。室番号・種別・備考・メモのいずれかに「変形」があれば True（文言そのものは出力しない）"""
     return any('変形' in nfkc(row.get(c, '')) for c in ('トランクルームNo', 'トランクルーム種別', '備考', 'メモ'))
@@ -112,7 +122,7 @@ def summary_text(e):
     if e['mode'] == 'type':
         types = []
         for r in e['rows']:
-            if r['vacant'] and r['type'] not in types:
+            if r['vacant'] and r['type'] not in types and r['type'] != BIKE_ROW_NAME:
                 types.append(r['type'])
         return '・'.join(types) + ' 空き室有り'
     return f'空室有（{e["vacant"]}室）'
@@ -144,32 +154,49 @@ def build_store(m, src):
             entry['vacant'] += v
         entry['rows'] = sorted(items, key=lambda x: room_sort_key(x['room']))
     else:
-        groups = collections.OrderedDict()
-        for r in src:
-            key = (type_label(r['トランクルーム種別']), num(r['金額（税込）']))
-            g = groups.setdefault(key, {'type': key[0], 'tatami': tatami_of(key[0]), 'price': key[1],
-                                        'total': 0, 'vacant': 0, 'rooms': [], 'dims': collections.Counter()})
-            g['total'] += 1
-            g['dims'][(num(r['幅cm']), num(r['奥行cm']), num(r['高さcm']), num(r['面積（平米）']))] += 1
-            if r['ステータス'] == '貸出待ち':
-                g['vacant'] += 1
-                g['rooms'].append(room_no(r['トランクルームNo'], r['店舗']) + ('(変形)' if is_irregular(r) else ''))
-        # タイプと幅・奥・高が同じで金額だけ違う行は、一番高い金額の1行にまとめる（空室数・室番号は合算）
+        # タイプ（帖）と幅・奥・高が同じ部屋を1行にまとめる。金額は一番高いもの、空室数・室番号は合算（2026-10-13 指示）
+        # 向きが違う部屋（580×220 と 220×580 など）は別の行。bike_rows=1 の店舗はバイクの部屋を「バイクガレージ」の行にする
         merged = collections.OrderedDict()
-        for g in sorted(groups.values(), key=lambda g: (g['tatami'] or 999, -(g['price'] or 0), g['type'])):
-            w, d, h, a = g['dims'].most_common(1)[0][0]
-            row = merged.get((g['type'], w, d, h))
+        for r in src:
+            bike = is_bike(r)
+            name = BIKE_ROW_NAME if bike else type_name(r['トランクルーム種別'])
+            dims = (num(r['幅cm']), num(r['奥行cm']), num(r['高さcm']))
+            row = merged.get((name,) + dims)
             if row is None:
-                merged[(g['type'], w, d, h)] = {'type': g['type'], 'tatami': g['tatami'], 'w': w, 'd': d, 'h': h, 'area': a,
-                                                'price': g['price'], 'total': g['total'], 'vacant': g['vacant'],
-                                                'rooms': list(g['rooms'])}
+                row = merged[(name,) + dims] = {'type': name, 'tatami': None if bike else tatami_of(name),
+                                                'w': dims[0], 'd': dims[1], 'h': dims[2], 'areas': collections.Counter(),
+                                                'price': None, 'total': 0, 'vacant': 0, 'rooms': [], 'bike': bike}
+            p = num(r['金額（税込）'])
+            if p is not None and (row['price'] is None or p > row['price']):
+                row['price'] = p
+            row['areas'][num(r['面積（平米）'])] += 1
+            row['total'] += 1
+            if r['ステータス'] == '貸出待ち':
+                row['vacant'] += 1
+                row['rooms'].append(room_no(r['トランクルームNo'], r['店舗']) + ('(変形)' if is_irregular(r) else ''))
+        # 同じタイプで幅・奥・高の差がどれも DIM_TOLERANCE cm 以内の行は入力の揺れとみて1行にする（寸法は部屋数の多い方）
+        clusters = []
+        for row in sorted(merged.values(), key=lambda r: -r['total']):
+            for c in clusters:
+                if c['type'] == row['type'] and all(
+                        a is not None and b is not None and abs(a - b) <= DIM_TOLERANCE
+                        for a, b in zip((c['w'], c['d'], c['h']), (row['w'], row['d'], row['h']))):
+                    if row['price'] is not None and (c['price'] is None or row['price'] > c['price']):
+                        c['price'] = row['price']
+                    c['areas'].update(row['areas'])
+                    c['total'] += row['total']
+                    c['vacant'] += row['vacant']
+                    c['rooms'] += row['rooms']
+                    break
             else:
-                row['total'] += g['total']
-                row['vacant'] += g['vacant']
-                row['rooms'] += g['rooms']
-            entry['vacant'] += g['vacant']
-        for row in sorted(merged.values(), key=lambda r: (r['tatami'] or 999, r['price'] or 0, r['type'])):
+                clusters.append(row)
+        for row in sorted(clusters, key=lambda r: (r['bike'], r['tatami'] or 999, r['price'] or 0, r['w'] or 0)):
+            row['area'] = row.pop('areas').most_common(1)[0][0]
             row['rooms'] = sorted(row['rooms'], key=room_sort_key)
+            if row.pop('bike'):
+                entry['total'] -= row['total']     # バイクガレージの行は店舗の総数・空室数・一言に数えない（バイクのページで数える）
+            else:
+                entry['vacant'] += row['vacant']
             entry['rows'].append(row)
     entry['summary'] = summary_text(entry)
     return entry
@@ -202,7 +229,8 @@ def build(csv_dir, out_dir, master_path):
     for m in master:
         if m['publish'] != '1':
             continue
-        src = [r for r in by_store.get(m['faboc_store'], []) if match_unit(r, m['unit_filter'])]
+        src = [r for r in by_store.get(m['faboc_store'], []) if match_unit(r, m['unit_filter'])
+               or (m.get('bike_rows') == '1' and m['mode'] == 'type' and is_bike(r) and r['トランクルームUNIT'] != '駐車場')]
         if not src:
             warnings.append(f'{m["key"]}: 該当ユニットなし（{m["faboc_store"]} / {m["unit_filter"]}）')
         stores[m['key']] = build_store(m, src)
